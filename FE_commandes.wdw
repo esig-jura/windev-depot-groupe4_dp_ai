@@ -1,0 +1,44 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FE_commandes
+ major_version : 25
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FE_commandes
+ identifier : 0x22ff7cca035d86bf
+ internal_properties : BQAAAAUAAAChSGR92ZUqjnWpWSJU8YaXx2AdZZtCDnJfb4B4K8iy9Lp/R91W3q1atIDzBqrzh85R3//jVoLC7xnj5yWHcy7Z6EKNWMXPJ2geajabVPFt621IpakEYVx4kBD5phvriyIAZ91UNx1grzLvA+EfznKxzjotJOI+8ur5Ek3/9itZmSHAXZg6vsI49qOiQtYwmwbn7pwRN1zsidGnsJ1v/i+GSImj5219LoJ7TRw80kly9az6HXSmZYMGHZK0a9rsTmm6WLQUXNo5+LjeN4gzGmi0hFWNsKuRK4VfXkpVW+GXTdhv1O1W3hHsr/tuzeWFd+z1mW5+zJ5MYY9ODLBlLCF4xe+LwvnRlCgKewdnGwW0YVIiIjuGfkeQ+M8b/HCxM/NAgCJyOzhThRkxKjTSuCMbhM1Mvl8q1yHRgCeWVMn5C888jdI7v4I2GXyYEjplo5EUzE35k4S+snQ8f8cmU4d4XKHd8u8UxVOGWUd542H/nzJAhGKDdMtwpvWpveqf05DF2NWtq/g/0p+3HDJWwW5r1Ovg3SLJYComVm2tF2gGjRVGtwfQA6CyzpfP7dvmnjm8uo6uGex/4FzFhivByiN0VhoUphvN8AIt6c6ivm+RFf9AQcUDfq4Mae75pVV0Xk7rxvi5VEM=
+ controls : []
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : BQAAAAUAAABd4biPtdLQOwfUFiqrit8H4xfGqKyz9t6VLxCUnNZRQiLPVs82PZNE+UVdKRzjizyeuKyRur85gNMUfqplpmtNDnQWQla9zo+GH9+1EfUJ6w17Dn/egD/gv+Hhywk8c9unIdzEp7EHgaAqD28w7Agveg4u19PBcKGZtQ==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : BQAAAAUAAABqPQh6HC8RxAVkp2SqPYLuZrfVhd+1KX4lx22hIT8uqEpE6yP7Sbc2rmVqdmL816EWzXOkEe9ijOtYwchZKAfpy3B1cNqhpJgsnbUs
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+   -
+     type : 230
+     enabled : false
+ code_parameters :
+  internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x12ff7cc10040653c
+  internal_properties : BQAAAAUAAAAa2Zm8J9E/zh+/WIrVvz1fER/So3PB0gjQuxc1xKQVWY4ZDm5lfg==
+custom_note :
+ internal_properties : BQAAAAUAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : BQAAAAUAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
