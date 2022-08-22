@@ -1,0 +1,129 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FE_saisie_pays
+ major_version : 25
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FE_saisie_pays
+ identifier : 0x23032fec04c596bc
+ internal_properties : BQAAAAUAAADwgQfxp0+Z4BrzR4Burps9ApH2i2r0aNrDaQvqI4y0IwZF8zIDRmaSYLK6vx8RAl5UGtUahRkHaaVixPO+/GDHy/2ZHAr3dsf4ZIQ0gdXLqYUHqFPo6er76WhOmphZJcsJF2RumYCJw+9ZIAcOb9Mppmx9aZRfWc9nHX5KBH+WrLGTuhEzLULgWKzPVfBMPMX03r+qRqYemUhGU9mNgXRugO0IcUolPh9eyd+GceIyD1tp/5l8/i/ZXOdgYFywhp7/igpT4+6Y907XOscUs5qtNUjsC9ulLpN2jbJZkP1A0DrHuA/RDS/XiR8fnGkLN+qs2VR41XzW+cyR/AHAWAliD2UMcx3hoMjYdbRcT9dYIb6SVco66M9sKsU4sze0yX7k5LuVjW+zaUouBhSlb84djoxUXthMMEGSvyfdtTaL6UsTlM4IMFUZ3bzr3Tx3laPWCvCcxxKGngquNEyU4TUOMPlqb62E6dPcG9xBWAn1unSoiT7BcbpdoOjUgmVrqK/66TE+cktNRFpWnmIAGgq+o3/Et510d7NrxnLhFL3Uk/BJawIXlmnAz4JCcs/xHaPZ1h8/agKCShYC0iov1KxU7x2eW/0RoMpoH2GJfsXxu96ZEiHjcgUEu9fQw9QUUCdbhhebb2ySsQbBirj/BbE9VILfiIwYAhxCfeAqY0Q=
+ controls :
+  -
+    name : nom_pays
+    identifier : 0x2303331a04e50460
+    internal_properties : BQAAAAUAAABrpu2bLg8u09NIQFeGgfhScaKKktyZIE9Mqk2y/uS1T1fhZhbTdZlL3wNra3EfjDgNHO556nOrjNawDbsbA1xTmwutlbnwh3ViL1L7PkWd9KjO+1yif0Ih7VXf404r61KtchP0uRT08itxzzpK5wPAILea2iKsCz4s4gD9VJIrj2jU2iUB/zcy1zzVnrmGFpE578Xhzs5qbZEht+Ql8aD6IXkwQGaogTLgbKZiTvGKJ/VYdykwCX60IMNi+fQ+RlQ5KHu6yaWTTuB4VZtXmjJRH5DkgxJxOz7kYSPqk66sE8LU0jAMfnneeUqHpujx4bFOpw51TxPoIZHPqMnzCwncauKMU7SSEZy4om7fGpFUJ+e1D9HRWEGW5S+cPQ+3hNbt6+yWYMfjPxw+6X0dmHgTtjw/bf83L69Jajdl8MkTNtwl0/zY6y7/AoeslAsDllo8f0vPbDSxA5sCKcGaGXDIfqroB/Elbz2+rax00z0GzO967ABri1+ueo22zyfYOtBfuYxkEgJVSoGbp2dLLuTTZ6CZ4dUZoBlsdyXFrr+72aTmSVsD6rbjrTVB4gS461JMjL8WaFrFb6eq8ufbjXaZjuFEGrZnYhr8jCALBniXQpHyzUWABGxRm2fncPplrX19PJ5lFBpe9tIjeCFofKkM/JQ6zPUGkrhvEi24rrGXLC1zx/Yh0M56F/1cWBY0xpUKCGXv1pWyU24BvjjrrguZPsCY7iYz9HPNdurvxvtZMTL9Z6LgJZd36PrhiXrw6p36ydL+7USBoZG009yR/AMkIizIYTZtBQlxgxe+yTzNqb7+rYnR4XN3wJheCaWeARFYiruZcj2yK7VGY0lb2voPgd9SW0tvMSGijlpmzCfLEIOIkeTZ7o6SM5e6cBVMGLsWYRbwEyvwp+4faGQWTsPqBXBpvx87YimlKwRkGNjpSbfbYIkw/mNzLUWHfS/9PYO6nQxUvV2Mk1924Y3klg+qAUlCcSIfneTw9Gs16J/sJyttaD9KInJuiJmKOAPNdR29MWwFOOOf5XgUaUjHtJlSnnYNU8ELLKsnCdqdxF0W67PFoxcBhMCQ6k+SzZxLfnXL6hUWRVhlfJxQFkatK/8/NweRp6UsBCfB
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : code_pays
+    identifier : 0x2303332104e82074
+    internal_properties : BQAAAAUAAADEJnAIBv+rRzsf3OGiU39TA2v2F2IenoaPmjB8UMROw3TYcqiX55mCyuJIJh/85b8VEdpLFLWEWHbwGKfPrYivxa6f3PqFJJahCvRLJVu9HkZiiDYz4YBqPtQuQgBYn05dUqjipmRgrbXkNyLR9lYkdcVZglvpUGSVCMST88/kyGL6eUgOq/Y+uS3N4p1xInqcQvj/GB9ELdxWBl3fDKLi0Wl+HMtHPkqjH1iQTDnFYKuymjGEMlFnQ1I017fgj7tsKhATTKVt3irWzoWaIKZx+gJ3RPs5ov3pYMiTvbslT/Gy/a/h3W+vYrtayzkUK+kiGTArJ3hqn8CcQn2Ggv/ZkmnrI9OyaI6B8+AuOKx1ans3fEtIpZIJR01YaJQontMZQi3AGiHbpIhJJDoKOH9hRBYlesLnjn4UbNVIoUS5kXLNQMg45Fz/Nk0klGxWLqFIXpwRaCJl1kIcc4YX7235z1W8tLtDRV7zS+sX/p4VgnGPFDBV/uAGdeqRZIoW1ISNT6fqXsQX9PbW2jjdrhFeM89gXIc9lFUGud0ABgmAWQgL6+KNYHza+fYlysgzsGod2aHkmu69lp3VfElZosnBv+rsWlqZXL1URWyfxqVaDPCdq1VM5r4ITRgpKJYm0PeWUc4rXspqHw4EGqMeBUAI0yEYeo+43CWr1U18Tp7+IgjKcUzrNF4rM7QSrvif18k3nyFtSBmi2DQeKsJJ//4Rqfe4nPX03wjp/D+8ly14R+NIQzSG7aPczA2HzaIZARMPvHYe+UBZ3Ocl0h/xvV5mF5hfxqfiJHniHW5NdO4pANQwimwIDOxFP+4xGkIAWR5ydnRGq2Q3jY54lHwyFGIE/ztfVhqm9pe/kAu9B48Bt+U0soVOa2VIJrstPU42VLykzx8JEDSDU0FrF7E3QAu/R3baovbwgasujaNTq8JpZHG5OYw34wrBqBkIIuB/eWqqjzXhDhqrB8yiXhADhmnFKxnVqgdqjnx1KiIW/TmsaiV7rZad7JzPuCZsf9aZy7e8vYVQnCpQvRdSAx34iMcGG+opwRMNGYghz596bqXyOCPhG1QikApE+CGYVePzNJumSu+cwFd9NU9Stc0nkd8ugLBgvzFcmeVb7SU=
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BT_Valider_pays
+    identifier : 0x2303334004ea9873
+    internal_properties : BQAAAAUAAAAxdl8zp03MTVbJJMrSVBM1DOJT2/HR1dHzxLnMYF0ZoanimuyY5UQLFVwOhf8cum8FuXm/eDgeM47uvw5BCBD7AzFUcTBQvy4c6boCsrPtsYmVV9xxkx9xImewqUm1CfkCLYwwTs26TUWrAkvCUmZchOpvn/DOPQTx1HaBgVgfVM7vEZFGwXhjjzCqoUgR6jcRzRQ2ws05GhL+hrH3DIv6RWd2FhQ9l6tjXUgLUZlUiA+Q9YlguddmcZiLZAsSNbvi6u+v+zAkzVMacikB7Niqti1EL9OH96bSHHM4wzKRVvZwjT2hBjSGJ3GvGzgyzdX2VPlYaS5zmSvZ6UHhjMMRovkKzO6gg2m5QyfJjB+42rJFhoXa0KG40G0Sm6CviQGPyI52vovDoSV0EL2lx46/sXa9q4UaGc9C1w01yc0/hYrKRSjReZXb96xLSeU5GH9upwHQ0/FPYz7DFDyrtuWFupxt75b8+53uO5YuNI7yips9b0mU7zOunAHIm764bHFh8c38xAv9PXmJF5LzSAsLQOBfrAsYXTUewTWIu+/1J1e2wxicWqQRnRgnXcB3isMdXO4FSr+tvJ9QzZ0frMzpCkGXDsMpCVmoyZWM4y5TCs2VpftfEAIDP0/TACmCGRlyMs1fANOESdG5Meg+plkrZ65R93JuziYdVk9J/z3W6HLPF4IwgTbjbAd9zPlyxdoQRdPM6r9zZrIlzAP20OcGYUyWioSLKbg3ODA=
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //récupère les données saisie par l'utilisateur dans l'interface IHM
+         //et met à jour le tampon 
+         ScreenToFile(FE_saisie_pays,tb_pays)
+         
+         //Met à jour la table recette
+         //Comme le tampon a été vidé, un Insert est lancé sur la base de donnée
+         //donne l'ordre d'écriture du tampon vers la BD
+         //la methode hsave envoie un update si le tampon n'est pas vide à l'initialisation de la fenêtre de saisie
+         HSave(tb_pays)
+         
+         //fermer la fenêtre de saisie
+         Close()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BT_Annuler_pays
+    identifier : 0x230333d104f0cde1
+    internal_properties : BQAAAAUAAACPgL0VhWNqIzAngqD4WhE7CmxR3ffX09/lqqrXKf4SMJT10TW1MieucD2PZAzJs26QYFgQOXmFlu1zKF2Ohd2GQjTXTjW1mjXDMrL0/B3v6/v7icJbNXmL6EFq84tXOwuMi74H6ewmK6szyEHCTMigwn4DEXbMPTYnxCx6/WSH4KpvXSUClehzUwiaGWw9ugtNLegSrrnJ8vYmfmFraHtWIW962pCxZ7sfZYB7RU3sBFNwUQ28LVdOJQAb3B9O3dc2wuNz75SEXZ9i0okNCKje0h24sxcjT57uxCtw/x6hwsqwwSntosxWQ8mnC7RWBVnKjAUkjaL7KRcxIXFFOBP9jgmGuMJkSzGFI39BeHO4Hv6F+unu4p++wmMcldqR51NlJlgwCEWpD6/C8pdPITRB1zzXRTe81w0s9c/Pox9tN8AALxLjk5tpmTLd+9cjNolsJdOitZvFUXiBvpZN4HN3wBqPgdg2McsoCZDobkAAVImjwbtusdFMjgdy9dCSCvOHh7fWvm1bk7tPQVStiglV3l75lh2K+8voH6d6Bbnr6a0UndLW7BJ/fy4ZpwoxuCYCm0+C93B8A843ZkZQaUFsm2S0z0yzdlfi869KoWDh9Pdf3xE1mqgpMbGVZld079MgQstzPAmu9fVdk4wa/LtZQYq7F1ognPbNlmWxZ68s8kD7MdK4O/wvsKN3iK2gz0D+q0lGbD316DAjyg343tFsxyr0LOZpC5rVho4=
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         Close(MySelf)
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : BQAAAAUAAABd4biPtdLQOwfUFiqrit8H4xfGqKyz9t6VLxCUnNZRQiLPVs82PZNE+UVdKRzjizyeuKyRur85gNMUfqplpmtNDnQWQla9zo+GH9+1EfUJ6w17Dn/egD/gv+Hhywk8c9unIdzEp7EHgaAqD28w7Agveg4u19PBcKGZtQ==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : BQAAAAUAAABqPQh6HC8RxAVkp2SqPYLuZrfVhd+1KX4lx22hIT8uqEpE6yP7Sbc2rmVqdmL816EWzXOkEe9ijOtYwchZKAfpy3B1cNqhpJgsnbUs
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+   -
+     code : |1-
+      
+      IF tb_pays.newrecord then
+      	reset()
+      else
+      	FileToScreen()
+      END
+     type : 34
+   -
+     type : 230
+     enabled : false
+ code_parameters :
+  internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x13032fdd00a75e09
+  internal_properties : BQAAAAUAAAAa2Zm8J9E/zh+/WIrVvz1fER/So3PB0gjQuxc1xKQVWY4ZDm5lfg==
+custom_note :
+ internal_properties : BQAAAAUAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : BQAAAAUAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
