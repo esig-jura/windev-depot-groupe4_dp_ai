@@ -82,7 +82,7 @@ window :
      p_codes :
       -
         code : |1+
-         Close(FE_saisie_pays)
+         Close(MySelf)
          
         type : 18
       -
