@@ -124,6 +124,12 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         open(FE_details_commandes)
+         
+         TableDisplay(Table_REQ_client_commande, taCurrentSelection)
+        type : 18
+      -
         type : 161
         enabled : false
  menu :

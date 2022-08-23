@@ -150,7 +150,7 @@ window :
   -
     name : BT_supprimer_clients
     identifier : 0x230487b60762a158
-    internal_properties : BQAAAAUAAACfEJIPE0bTxqdhctatMS888lqzK5DbB3wwlvx2Wa06oHRfa8YOpZJT2rvy6X2E9Nchji44s6x+YbkhslipbHU2m1DSZJHhS2E3/yI9Co15xgZEcCxV6YpK/xwqW2xt8qouJveBIYIuEWpy4VagudKVRFX063sEtWAOW2uYALni7tTAiayFBJ4lmbaGjGFL+uT9WsTsf55u7iAwlPsK5mNG29L+5HwaMaSg+2EEUWHMB08VAHzvkaKRUmVo+6hifQjK/1QktlepD4GA92W/CMNplMKk1EbzHSzch+K3icd2y2xpmn9wKZJ8z3Qj90ZYqi+3H0/jBsDiqowvysbXxVKNhEDi6CFP6HwAN4k4umCzeLHjlREt3ukri0nmld3fuOCLopN9+9MLXe65tP8TBzz9M1boGKsy/rh2mEnbBBKCAfR6EMkSWT7wTm6idS3g9BKstVaIXiEOk+AebSm9RqEgyn7IG6B0FMe11us8c9v+b9tY0+aEhcTjFQA8Q9qx9XBU0uZoAqPYACbRek88I00ieBumjywlC5Q5SukbeecHEK7fB0vMlbiJdnqJWm/LxUdgrCXeLLJbSp93j0fScaUoDSFQnLoxrt8YEjMsXouKn+jWi2VutVEObZY81WDK7SGHucYFyyap1FhCBltaNMxCUHLMO9QHPM5J//102ERwPz/ge9105ikAmbdbJtuLdTqf1inZ14aNt4KJGA+Wt/oh4Oqfy1zi3SUp0aJHQ35tmo8g9M+aXXb3db9W9L0W/r8xFp7jZ/TPKa7vG1gUmOY=
+    internal_properties : BQAAAAUAAACWlwT7vkp+tqIxHIHGjiOLqThTzATlKdltR4uB8GtD2qRsQUKYvc83eqeCIiDBR4Hn6nncvqBK4XLNz9MfPB69U9sxn3zcDjIhN6RkCPLz9faI0BfMUBzSpsFFMJLZGbC2mcCePLQ0lukerQIZtz9SvXQH2KFGWlJkMtPvqaRjEKardeIbG8sIji7v7cQkUZPOiMoCpl3Ta4r7/qPdJTuoA2lXDqa93uVFlvE+CNa+zE91eUdwhWnnhmSlCRz7J0PXY5nSpfqU4d5Y3hfxyh9ktw7NxcJm/Zn3bWTNdebOjTGoPzWnUHBmUA4+Mn7Y7jntApR40nGb2c29NzHtQAMPhUtun9ah8aQLdm5fkP8yMROIjWJlrOh0OyRSTRSUEkwcLi1byC8GsPzUihqM8ZwwBQn/d7MU/u32d3M4Uxb+dIg3+SLGA8D5/E0miD7o9skgTDnLKF3wpBRh+/qsbFNpYDk3ukokxoBr38FNim1OAD9lxLM0FzyKPdfQZkebvzVaccmnavn+97T88nbR1W3bZNi/rEgJFSn3S5feIh9FKYhIbAz8k9x8IJPFj045mSCG51zxhjbZvcfcya4f2VlFF4Rnx5r3drQ0jVEPq3+GfprnvtggZwsdC7UmrBlIR4ZZdNWYnXQPCRh1dGafvLBtDg+VFMbTIqPxdgdjtZDGiCuh6EY6msdtZQJ5KfCjWRvRX14CyfA3hEC2CizBj4rq6l2e4nTKe/I5cAb66BBrXbFfD24ubZQobfr+JaRQHlYX3YH2/wT5Ww04tkQFog==
     type : 4
     code_elements :
      type_code : 4
@@ -218,6 +218,23 @@ window :
          	ReturnToCapture(CS_nom_clients)
          END
         type : 17
+  -
+    name : BT_passer_commande_client
+    identifier : 0x2304bc4c0bce0bd4
+    internal_properties : BQAAAAUAAABkvxFl1/CD5Ew+YOfyt8zojRw2VeCqM0BOv7qN3OPC3Lu26OX1LXjSO0PwvQGa0qxhsd6StHRG9iLkpmv/iMpFu9PYjUu6tom83M0Oh5owpowZDFUaoPL2BZfUyUuSD7KPoIdpLqiab0t47R0o8ieSTTovL9mK7gXOfbdA6VtXRWYHKdf5hlkBibpeM8kYENEdiNy7BmPQxgsH8pwjyXUI30GISgZcIFJ0RA74ixx6sEr3Le2YWMZp4gD8/hiatz1jAt/E/Fh/R1GJ6E0DMSKwHwknGXZ5KMsVO3fkxsNuyswRMBXR8m4SpikSXFoZcyazyvntgzSLlZ7dFOMCqnGkPbrBe15dDIwGLNQw/34f/HftBVAVyFSepETFfPgOhPD0ylE7OEKbfJj+lEd/3bA4FEGoqJ+iYIwYhW8BTnzU+A91hPs0Qlk8BC1/+dVZsmWWaZrD//hEvRtd/yuAj/NomzAqp24oEPCqzrTxiqdOVJ6ewORNIPJtHBgAG/7IJAxmRGL3n1jIA/NBoV7G04e12uJg5i2YZGcls1vjTzxd65VQSHsK/g5n7sL2FefGkhIKW8WA7xMgyzBXy7wTHHObI7elDAwFQZg5I30y4Bb2HiaTxwRUh+vBdgOHhcpBm3kc/Y3GT3SN6IF2YvC9GWzo6eNu48JscTRZminQxXxx5DCIWsHV1oE6p0ZSHc6O6jIsHix3JPFTPNfUa/65rDoAuCa0IKo4JOwdNbDvcGxcuWNoIuGqT7MgIzJKLPLRaFizHYF2Y02U0tBF3Q==
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         Open(FE_nouvelle_commande_1)
+         
+         TableDisplay(Table_tb_Client,taCurrentSelection)
+        type : 18
+      -
+        type : 161
+        enabled : false
  menu :
   name : _Menu
   identifier : 0x292573e513b5f221
