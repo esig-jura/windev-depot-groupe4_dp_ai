@@ -370,13 +370,7 @@ window :
       -
         code : |1+
          
-         TableAddLine(tb_panier, COL_composant, Combo_tb_composant_nom)
-         TableAddLine(tb_panier,COL_fabricant, CS_Fabricant_composant)
-         TableAddLine(tb_panier, COL_type, CS_Fabricant_type)
-         TableAddLine(tb_panier,COL_prix_unite, CS_prix_composant)
-         TableAddLine(tb_panier, COL_quantite, CS_qte_composant)
-         
-         
+         TableAddLine(tb_panier,Combo_tb_composant_nom.Colonne1, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant)
         type : 18
       -
         type : 161
