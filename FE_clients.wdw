@@ -71,7 +71,7 @@ window :
        internal_properties : BQAAAAUAAABPmxy8ylFiXFLqiwovUbc4RxHVDjEU8OQ3D9E5vGBPgm/d0D9YOhmLp4YKo5jSoQGKq9lbqk/C1CbGAH1/yrLnlrd1UX0z8xMc3Zp8rkKPQJC38a8o7aQsKZmtKHz4USTLq8pRAA5OalEL6m6GaxcMtsGHPreD4OQrDHtYnS9XtJO6QKJH3WVe34bLqBYGXe328QTUpXWklCjGTg==
        type : 2
        content :
-        internal_properties : BQAAAAUAAADPWsv771X9zjNFBCLcMxbr07NEYsEiIUUasFcT/8l+RJjP/SBEykzc/uc9ibGV8wmeRO+lK1Dea38QN+JDemkypMKg1U9kX83sfPvqYy3HMSI0sJvD/QA1S08jsAXa2ctHRIaZjGMbsDn5L+ilKcGDl3tBOs93eVQM4etWRqgy4jlPzx4bbHF5VbLP/rDdrRjKzVAkBacqp/vqGeCelBcF6N2H0crraNOeKxbTVHkucO7SftJug+KRdAzY8IXDpxKM0BfM2rKOV5XJxrtLdKHekrC68moUPiSmDQwPxxRur/IkQbW6pPEnEMQ8BfzoN4/Le/kwQ2Aee3f/2BO6zRVt447Rd+d6YXOLaa6Jl8l8asyRFOTw/j2tRi7AzUFJKLeMjXEbi45gyseBpey028fe3cqEZSDR6j9VZ6MDf46Nd/BuaU4TyNibyjVzdEnMPy6HUm2MuhXdNvEamsT8eXaf4xKIDVE25Hl2sfmejwRmYi5eIlB3oTGmtFOKr/o2PFx4UDeKACut/8We1oXOq4nNc6pH0l10Pzc8f8du/7/Lzd7EbhNud/XFqB2GcvNyWXdBNhjb+Yd+HldTiMU7DKR3V0KAL3b3hkcCMinlBK2EkTaIhubgfGnSi9sSG5v9l97y/fcOAZTmMWCHPGU4DZC+SDYrLKmSUBtQA3K2cgsf730ZGRkwbYrD9rs2CMnZq9G6QUsdHU0AHt+3lJqCpQ4WuLjQNsfut2sr4RXjyMY08CXOsTjLwzPUFcBM
+        internal_properties : BQAAAAUAAAD/7QWtrL8H56ZR4Bz/LPmCZ4+H/fw/nIw2hX25DtXDJfQggzWGg49sd8mPgPf4m1jh82UZcohtwk3okpqvUdYHcG8Xtt9IXJWjwJA6S7dqa4kWjHLMUr95gQTOVxh3Loa4VK2J3y/P3tlxfIgWKEWAJx3V92UTrAUEAg0to8alY+CvKvZq2r8GXzIDZ2nloxoXf/osUlFB+VHJl5adVe1nP/OQpmyu9iGNvzZ/3ZVrEfBogvp7hPEzKNfhdNMANhaptu8SOXwhiAYNXR52y2NO3uBXWw0nV06O+IEArEphDWCP+UZmtFrbxd3EnIWk1ihE3K1dzP30Mfxv9I/eo2G2NIlkZiqmrZC4DvmYOosDVesLmVActcaNtlbicoygaTPpDD/7a/+Zm5sYKywEP9so7KWSfwKGT4rx/F3DHya9DU+P0cKX8alafopZlmt2DTKW4cHWrCrCE4d73EwUjzj76Bs+209Bp0harE+6A3C6hMt9iPqZIGjv9PakvQjEfqwdEVn27IRqKiE1hi3GmyEfbo0L7nHL4mZqDiGuTwGBUXX5wlcSZEKIHiQsnpcOjcUWZ5hnZcwbK7GecEWbdorjHK8+xexKbTryUx3hSD/SuZUh+g5wAa4v+TY+z5etD9T/4C+GmZNB+iysfFPuA7r+aX1PAAU/kdKW6uwqrsMzUlYShSETqx+c+Ji++tKmbyx9QSLLo5J8kAeuMVPEEge7a6U4K9eTsphU4GibaRdgR6iG2AfidGgUnhuMe670NdJz
         type : 2
        code_elements :
         internal_properties : BQAAAAUAAADVMHBFe8ZppddQTflXxXiy6DzJWrC9LU0/gwwA2eLbY/gnHF9b/sdx6E+YQM236HAKcvCJK+MeT/IQd8Adf9oJyJiOQuY=
@@ -218,9 +218,10 @@ window :
       -
         code : |1-
          
-         indice_trouve is int = TableSeek(nom_cli,MySelf,searchContains)
+         indice_trouve is int = TableCherche(nom_cli,MySelf,searchContains)
          
          IF indice_trouve > 0 THEN
+         
          	TableSelectPlus(Table_tb_Client,indice_trouve)
          else
          	Error("Valeur non trouvée, veuillez recommencer")
@@ -263,6 +264,10 @@ window :
    -
      code : |1+
       PROCEDURE MaFenêtre()
+   -
+     code : |1-
+      
+     type : 34
    -
      type : 230
      enabled : false
