@@ -241,6 +241,8 @@ window :
      p_codes :
       -
         code : |1+
+         HReset(tb_commande)
+         
          Open(FE_nouvelle_commande_1,Table_tb_Client.pk_cli)
          
          //TableDisplay(Table_tb_Client,taCurrentSelection)
