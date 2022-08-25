@@ -1,17 +1,4 @@
-//MO000-001.TXT ANA00000 TO ANA00001
-tb_client		NFI		nouveau fichier
-tb_commande		NFI		nouveau fichier
-tb_composant		NFI		nouveau fichier
-tb_composer		NFI		nouveau fichier
-tb_fabricant		NFI		nouveau fichier
-tb_pays		NFI		nouveau fichier
-tb_type		NFI		nouveau fichier
-tb_ville		NFI		nouveau fichier
-fk_ville_cli		NWL	tb_ville (pk_ville) et tb_client (fk_ville_cli)	Nouvelle liaison entre les fichiers tb_ville (pk_ville) et tb_client (fk_ville_cli)
-fk_cli_comm		NWL	tb_client (pk_cli) et tb_commande (fk_cli_comm)	Nouvelle liaison entre les fichiers tb_client (pk_cli) et tb_commande (fk_cli_comm)
-fk_fab_comp		NWL	tb_fabricant (pk_fab) et tb_composant (fk_fab_comp)	Nouvelle liaison entre les fichiers tb_fabricant (pk_fab) et tb_composant (fk_fab_comp)
-fk_type_comp		NWL	tb_type (pk_type) et tb_composant (fk_type_comp)	Nouvelle liaison entre les fichiers tb_type (pk_type) et tb_composant (fk_type_comp)
-pk_fk_comm		NWL	tb_commande (pk_comm) et tb_composer (fk_comm)	Nouvelle liaison entre les fichiers tb_commande (pk_comm) et tb_composer (fk_comm)
-pk_fk_comp		NWL	tb_composant (pk_composant) et tb_composer (fk_comp)	Nouvelle liaison entre les fichiers tb_composant (pk_composant) et tb_composer (fk_comp)
-fk_pays_fab		NWL	tb_pays (pk_pays) et tb_fabricant (fk_pays_fab)	Nouvelle liaison entre les fichiers tb_pays (pk_pays) et tb_fabricant (fk_pays_fab)
-infomaniak		CNX+		
+//MO001-002.TXT ANA00001 TO ANA00002
+tb_commande		TAR	113	nouvelle taille enregistrement : 113
+tb_commande	prix_tot_comm	CNW	Réel sur 4 octets$Chaîne unicode	la rubrique prix_tot_comm a pour nouveau type Réel sur 4 octets
+tb_composant	prix_comp	CNW	Réel sur 4 octets$Entier sur 4 octets	la rubrique prix_comp a pour nouveau type Réel sur 4 octets

@@ -240,6 +240,8 @@ window :
      p_codes :
       -
         code : |1-
+         CS_qte_composant = "1"
+         
          
          //Création d'un tableau dans la combo Composant
          CS_Fabricant_composant=Combo_tb_composant_nom.Colonne2
@@ -386,6 +388,11 @@ window :
          //ajoute les champs remplis dans la table panier
          TableAddLine(table_panier,Combo_tb_composant_nom.Colonne1, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant)
          Trace(Combo_tb_composant_nom.Colonne1)
+         
+         
+         
+         
+         CalcTot_comm()
         type : 18
       -
         type : 161
@@ -451,6 +458,23 @@ window :
       -
         type : 161
         enabled : false
+  -
+    name : CS_total
+    identifier : 0x23071e5d022cd82a
+    internal_properties : BQAAAAUAAADh4cWQBOyZZ021r7dT3le4jkqMdiM6ySUMJ6YruTYRK3g6N3C81lq4MAEK1WKAfN3PuOwRjZ8Kpbq8Yebj1Bv5O4mEv9Zo7pkRKMD8MNDOOfXwjew3bnOltg4ZnEKAMBww+RBaXRay2qTTYS6uHlS19+oPUBOEu6jKeV4ccbRBdYIg2yByzCMtwEzYq0h7raWrw4Jqd2ZUheAmAfQkrFwjDMp99ukgEFjsvUnUhaxGtBvj1r7DFMM8f+8ZCWBpwiataPUcYO6YibwpjSBhkotuY38B5+bMSGHraZYOdvtUdJCrNEyjJn8Bo6fA2QSF7Y2KZERdTHWfLUeOe1jioda/NVu6o4N+4fxxeiLVr9sygoNgzC8G6xFEcG4RjqBupUQphhWEfqGbzfTiPoeUklrua58Vl+yjh54OCUygYDKjafUY8PeB+BMW5EgxAf+YZvJMEd5wL7kChRKr3hOP8HJedxL8qIIqXbMuddYvNObLGmtGjVh0cD7d96lhsbpMrUUWcFG+ORcNwe/vdDeG46KjGxQVoX2Jqg2NdErpKe6+kkYyV0KtOG7V7gGCrqSv+R0LOMB1Sl7JM9DZ4wKF3pybWbOtfOeQYwm+DsR2Wq2eaa2tiIZYENH1iuep9iCR+XAAKVeLXOAeN7fv6PN06uzInNhvbx1mvHtKCTRLXo823U9mxOVsHfSbiqqAQ9/Dn8adl5gP4cUKlPICUSGjgR9bTl2Se5MPqjo9yAfQoLOSPp5H8IpMlaftL7IgYSXE3T7fTL1/vrNYnIlVrtSjXCF3dEijxKFwgDHIQkEUNLn6MZl1mkE9f6Rfp5n9BVdJ7s899cZo4bY+bNyjhTmL3oa07UmDi4KshdccFIk3/4KFbltbybiYjvrzTrb4ez05clhCwoE6H1IIeWq65Q3Dat9S4woZMvYUaQRALGR8Bg32SQzX+l1osN9FYLYpHfzg86MHxs66Yk5FKafYf81+D/989efwDad9PrE76TWEhtnivsAcBtT3lNfUmbIPyrHaQ1h7WvLFO30/4lZ6k5Y9d/b2TXJQ7eaFKZGQLqyrOgingH3UrNPuAACgBNJxtxQkAyxii3ZwjUJx4ucfoz8GZQY84RzSCWkE60fqHDaR8BFwCiXOoBeuVvSREJxpPs+aIGzvxlo=
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
  menu :
   name : _Menu
   identifier : 0x292573e513b5f221
@@ -467,6 +491,7 @@ window :
    -
      code : |1+
       PROCEDURE MaFenêtre(pkcli)
+      
    -
      code : |1+
       
@@ -485,6 +510,43 @@ window :
    -
      type : 230
      enabled : false
+   -
+     code : |1-
+      
+     type : 11
+  procedures :
+   -
+     name : CalcTot_comm
+     procedure_id : 1371097107282374359
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // CalcTot_comm ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      procédure CalcTot_comm()
+      
+      //Affecter la valeur zéro à la variable sTotal
+      sTotal, sQTE is real = 0
+      
+      For EACH tb_commande
+      	
+      	sTotal = table_panier.COL_prix_unite
+      	sQTE = table_panier.COL_quantite
+      END
+      
+      CS_total = sTotal * sQTE
+     type : 458752
+  procedure_templates : []
+  property_templates : []
  code_parameters :
   internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
   original_name : Modele1
