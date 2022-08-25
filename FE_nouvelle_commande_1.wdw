@@ -95,7 +95,7 @@ window :
   -
     name : CS_qte_composant
     identifier : 0x2304c05e0d74f050
-    internal_properties : BQAAAAUAAABj5ZsnPaNZCTXbFX13E3GzG/67Q9yo10VYeBMY3mbthxoH01UUWabz1zZBJ4PDFlGkhzesRO5icryj+J+bg60OdV8IrO2ckXfTQDqMNfm+El5fYhv7aq/sYrkmBNu8HNsrgDtuEgr6yn/uXRZ+myggK8ld7Mu1amx+tFhQpQmXFM+ahCh+vGPadcvtDIlq/fpfMMmQMzQK5szU5IIUveOQLlo65hm5vwRbSX0KKBz+47oYxEzqJNIK0+iTjVKB0PRTa1t8nfYcAMErn60ko2gJWTR3Gv8DYMq1Y/xsEDQjrAZTBNJexXElFjL8X6yxSe8DSie1ECDPtYMPXlD15L1gmgLupaXZR6EmrDtd+ttCVZGb+vHogr9E5ycAkXbv2WGBgujStKRkJ1pKsX1rEmZoSRgZd63SzJ1xZay0C9+8vD9MsaA0qGFmA8ROnykkMPO9PyvLjI0VmTZh3a9+n3ZZzibvHALBlqV2S49IgKyzH253UmvepQgZHiP7YYvvEFIlOxsiiABdiKMDvYqXYP4ufQkwaAB/4hAeSZSBnaw0UTuLUdYRtYGVLG7WIFt/iPex+wp3VP9tEb1OsgEEcugu7AEADIy18lfGDLT9H3alZtqpwDihBA29zMWNawowbWazjlrAnqxV59j78wUP4KWieYXFX/o0HgCMLsAGMWqgTJtwOa3kfsuJCII7gJL6SWnEjv1QsvBHKW6lTuTCKzwzHlCJQUqYjNlndI/ejJ8YKcNa5i/jhuCK2Ekh/W5iRXzNE83J1EuhFewIChg7EWTepiywcwby25B9FU+6CDxsGiS6y6LKfFcBTPtSmXr220AUn9gWSrb+xhuO8NRT07d1NBBFG1jJ1CQ3p3XnAcJqiC5GkhHFGiGY5TAw2dmJa7Oadx8btsCBOIdpS3fW6f3OP+bdFWY11Txm8o2t3zEdIolNqWqBn4VtHyOP517JOH9VYMWTpjmzL1N7YXUorhgw+l8J2RCGfel2Tx7IAoywUloGSMZLsl6BNwKXtzFP76aKnB97CpXpD9n+WyLUdBWxE4/2TEWMaP+wXp9+4wqBLU3Ml9I6Uh3pbE8H8TvAJwKf8TQwMKny00n4uVSXkokYndATIB8yb4UBkXWLfJe8tKBhxHk7tJ+6y76P67DeGV6G/1KwdYBwHHmIAt6ddMYdBSgjQZlXCIvJqt2y/QsXHwrH5AuKuzo7TQrruQlc+5Bcz20Z8lQxt/+mKtQYAw2b2xq6rpHJ+bRhgYPC0Lc=
+    internal_properties : BQAAAAUAAACxjP6k/hslz7iU2hpL5MQv5LmgKLvwQNSlReLLu8Mde9vKTyb+/Kzn8kwMJLkXIWKOw81QY4fIhc9eiYoWCSkw9yQWRs78cq1jFbZliLSiCzoLLA8XvudhLZtW6YiskoM72sH07YUbwotvVZNSK8J2BLuWjETiz2aM1gfw7eCVc5mTMav0wFRPBbWPn33fny2QfyRPc+o7gvXxfIgHMnjGzYzhBx7+z2B9fWUqmkt63u4M4kPbCEsSzBohVB5AuwxkrrTTPgUDaUkdCf+PU1I44MEbjsGS+YKxLC9B6bCcEIyuf9hldZeSBfRhqPBTzHKNGsMwhBv5yD/3AytaveD60aJrk4V4Eye28pEKQOLT/e/6n+7sP9xRouBOyDIjGWknm9z2LmAoj5v+8fCr5T+Qgsvc/BZ4gbN8vboFDRJwkUqGaSZOEh1n4+mT1dRkBjWxKIvp5UA4wMbclCf0AU5ukdf/hFa4Dix8ChmQYh1TyQ+CKpKEn5lL3sW/4oUmVjxkoS3x720u0RBikL434Firs3gNEPaRyOA4XX3FKsQEJnZchfUnLTDVZAQtZwhaDgDryvFPqOdbzL43n4rSpzS//vKdX3uG4Vc1RLazwCHH0xSNOCn2epAmQTrIWPni0R/yDeoWUvuneOOmYACsJl8jPgJ/Y9AzxC3BI3fX+Lz24zLPr7V2J898K7WSmSF660bVp5W63oc3tlG4FbW9Z37G55md05S3sMY2o+ITEx+EwkzrBqlr3zDR1Vby5D+2Ve+0OtudLmCrmB87Y7dI3x7dY1mKo2at4SeOtpKf71zqPw9lQ3Rciz+Q62qNJvUKN8vn4jYC0C0gWXSXwUM859k8oYVjs9io1FNyMtoSPt6qAZd34u9pWb0RZtGfIiBjtUB7UFPtej8nK37A2hhtp7cplrVT5aQgDR2JFeQmBhe/eUqOW4KJpK+ilBi0wk8JnhCSZafD5Lhd8Kig3DJbdn5pQ+gnpUw7H7Y1Xm0ZGVyuiV9DPoaZM5T02FOu0IgvacGdt+Oh+PAL8phNYgPDYlvEcCymqgkxEpbPzUBtSKJVzsy7q6jACdlCAQQEPGTMVe/SdLI8vMRIMhSTmuvc7tUlpOdJTNMdg2aePv7yXYlAY8UO2Iul0wflsgUMJnkCWdc7PJZu02VEzy69eS88/l4IQJvJqZeqQg6W19g3MKM/ciUaslcmYAicTFn21lT8PTPzpktVTqzJ7pQ0xGzpZOj/7mZHCBoasrc=
     type : 2
     code_elements :
      type_code : 3
@@ -446,14 +446,15 @@ window :
          // Gestion des lignes de commandes ( contenu de la commande)
          
          //tb_commande.pk_comm
-         //HReset(tb_composer)
-         //
-         ////Parcourir le tableau et récupérer la pk des composants
-         //for each row of table_panier
-         //	tb_composer.fk_comm			= tb_commande.pk_comm
-         //	tb_composer.fk_comp			= table_panier.COL_composant
-         //	tb_composer.composer_qte	= table_panier.COL_quantite
-         //END
+         HReset(tb_composer)
+         
+         //Parcourir le tableau et récupérer la pk des composants
+         for each row of table_panier
+         tb_composer.fk_comm			= sPk_comm
+         tb_composer.fk_comp			= table_panier.COL_pk_composant
+         tb_composer.composer_qte	= table_panier.COL_quantite
+         
+         END
          //
          //hsave(tb_composer)
          //
