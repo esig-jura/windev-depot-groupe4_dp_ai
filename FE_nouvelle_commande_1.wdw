@@ -381,7 +381,9 @@ window :
          Trace(Combo_tb_composant_nom.COL_nom)
          
          
-         
+         for each row of table_panier
+         	Trace(table_panier.COL_composant, table_panier.COL_fabricant, table_panier.COL_type, table_panier.COL_prix_unite, table_panier.COL_quantite, table_panier.COL_pk_composant)
+         END
          
          
          for each row of table_panier
