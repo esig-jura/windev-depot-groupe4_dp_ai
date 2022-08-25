@@ -450,15 +450,14 @@ window :
          
          //Parcourir le tableau et récupérer la pk des composants
          for each row of table_panier
-         tb_composer.fk_comm			= sPk_comm
-         tb_composer.fk_comp			= table_panier.COL_pk_composant
-         tb_composer.composer_qte	= table_panier.COL_quantite
-         
+         	tb_composer.fk_comm			= sPk_comm
+         	tb_composer.fk_comp			= table_panier.COL_pk_composant
+         	tb_composer.composer_qte	= table_panier.COL_quantite
+         	
+         	HAjoute(tb_composer,hEcritureDéfaut)
          END
-         //
-         //hsave(tb_composer)
-         //
          
+         // calculer le prix total
          
          
          open(FE_details_commandes)
