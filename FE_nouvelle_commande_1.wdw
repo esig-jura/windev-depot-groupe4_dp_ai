@@ -448,16 +448,32 @@ window :
          //tb_commande.pk_comm
          HReset(tb_composer)
          
+         
+         //boucle pour l'ajout d'un article dans la commande
          //Parcourir le tableau et récupérer la pk des composants
          for each row of table_panier
          	tb_composer.fk_comm			= sPk_comm
          	tb_composer.fk_comp			= table_panier.COL_pk_composant
          	tb_composer.composer_qte	= table_panier.COL_quantite
+         		
          	
          	HAjoute(tb_composer,hEcritureDéfaut)
          END
          
+         //déclaration variable pour la somme totale
+         sPrix_tot is real = 0
+         
+         //Calcul prix de la commande actualisée
+         FOR EACH ROW OF table_panier
+         	
+         	sPrix_tot += COL_prix_unite * COL_quantite
+         	
+         END
+         
          // calculer le prix total
+         tb_commande.prix_tot_comm = sPrix_tot
+         
+         HModifie(tb_commande,hNumEnrEnCours)
          
          
          open(FE_details_commandes)
