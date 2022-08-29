@@ -218,9 +218,14 @@ window :
   p_codes :
    -
      code : |1+
-      PROCEDURE MaFenêtre()
+      PROCEDURE MaFenêtre(pkcommande)
    -
      code : |1-
+      
+      Combo_tb_commande1=pkcommande
+      ExécuteTraitement(Combo_tb_commande1,trtSélection)
+      
+      
       
       IF tb_commande.NewRecord THEN
       	Reset()

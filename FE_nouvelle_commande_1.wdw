@@ -241,7 +241,7 @@ window :
          CS_Fabricant_composant=Combo_tb_composant_nom.COL_fabricant
          CS_Fabricant_type=Combo_tb_composant_nom.COL_type
          CS_prix_composant=Combo_tb_composant_nom.COL_prix
-         trACE(Combo_tb_composant_nom)
+         //trACE(Combo_tb_composant_nom)
         type : 33
       -
         type : 17
@@ -290,7 +290,7 @@ window :
      -
        name : COL_prix_unite
        identifier : 0x2305ef1c0a7fd564
-       internal_properties : BQAAAAUAAACx/ImwmlYW9kv/QMTe3uLaB8/2iyKNIf6i58KWJeDuX41wqDlw+gYDg3In6NUjHicKVcX3IbCV2nvIO9ellR/2ZRtYbJOXUKYr5mWGCSf+yj16so7mraeylq7cEIG4gfE69I1TpwF34li6ROtItHoZnoUZ/RjrWfIqH4zi9RvaRuHYuUmjUhrROCrYaSB7F77Yz3cLYBnoU3k=
+       internal_properties : BQAAAAUAAAAFKWuA7eHyVW4QB1XBJ0+t+wKCnm57LQ7zCCRMPD6LEidyKhaH213gZJZxffZam+5tM31rcCp9j+sd5aCtz10hOr9g6Q/jSRcW36s0aJkWARZ1YOFM1J+Yyz0W7Tm0x+hzmUEgezIVIi2lpBbWWlqU9XSDaODGDxolABQvVxWWe0xD/SRn0yiJ+ZPIOpY4J2AWrnXpIYcB+4ev
        type : 2
        content :
         internal_properties : BQAAAAUAAAAlW5ebXxaI9lMp8NHFGnRP3Vz9Ohp3nleL5ml3u3kd+9sOOtueHU3k6nI7E5DO/yL91wf577hUDL2pY1dDdOIBCnWUaU+MCw8IoUub8OgyO35ExiDa2HUD/SUQ/gmpRab0MSA6JnGzswvhhsMQ9tXg2oMGd+0eLlzmKBuAMVky0xtsXFSwOA8eHmj4Obc/fvlh/uj04UrFEIcWGn3jgjr4ZpXQXRPO1gzuQdbkpaKy9uIP9URrJpXdJ5hCzdPUr7k+sa2ciaKCh2tPEBuIMTuTst0J9FF4f16WfcJW0kFL4/lbfCojcI8J7lHQB/eVLawttFSk/NWjx7AcBYxKCq+0dTfct0HF4pdxI3+cKp3CGnAJpdvbwcXWap0/jNYjoxxV7yIRUMS+6LtcT1skKbk9pQlefhJJGwmO/rY1c/pMALTDzcOZ3jlbs/hWUk0Y5ucJBQ0FpDVgICohawYMmzkcTWs+jGmqHVFreGQGiRjZR8iBRGUdo5owmxBvaxAgWz2i4dlNnOHkT6QXj7mUA2B2xz1rb5t24nnZXlqYy8+WmsCdPpLGk3xtT8ZX5lnCsLgvjXYUwV/z+myKM1dn/GOgrQ8eqsLv85OhJxgzBK0L2vJd7sc4bg6WVFJzBau/xGkWQumtn5gR/cOgt8WOhenVToNVd83gM6cZ7sEOBKfwX3Gkx3zFJv9P+zqJfB5KEG08HzAqcb+wrx4mwJnsnqQ4JG8SzB8wuWqb+mrboGc3TRk7w07QO82aJ1I8VowBk2lhc2/jmX+l74uN1M0PbLEJBxOCnXaWn58C+8IWpA8=
@@ -314,7 +314,7 @@ window :
      -
        name : COL_pk_composant
        identifier : 0x230624d40e3facb1
-       internal_properties : BQAAAAUAAABxAO5gC0qh7bVP6FgkotLSRqlhQG4kkHITv225pzEwfW9FCnEOAbckxNDtXzZp821x6RZqNbuHa2N48LiDkUB7A3wm2nebNIQYPsMXESvH2drt0aMidsaCbHFYNKKy6Ixj48nQZMLg+AMmwkvMVLVfwnDpWIG6qkdmmrSdhbudDxCFH00gs/F+CDiBP/Kn5OnkYA==
+       internal_properties : BQAAAAUAAACk1QGzuL+2GBb8leWRd4kBLYzt6p0jx7+uJsx4YsN8wVurKslEl/GGBBKN31Cb23XVJx5yO/kBIaeeoKxxlzT/m/au0v0RPoLEY/7cXPB+EpUmlPDlayFrm05rmUUfhz1C8HgRKzu3AR4P0bxjrcgkTdFkTZS3LVwTq0EIvEQdhOnm1BhraKy7ddUuSsX0EZQxNQ==
        type : 2
        content :
         internal_properties : BQAAAAUAAADGP8vDflA/n2UxCmA60uU+fkG6v/pAeogT9iwQ3IAKCPqUHnFSEATU3PQSvwiqff7PQklkR6J54InRV9GnvQIyzZHcL0lfbtBUHb2ZQlGAm5VI8cbLxfLurFMrOAPtE8DJw46XnA8CZs3IuuPtiAkFLE3t82AVqBmq0am7BAy8q20Ao4UYMLAyuYIUXFp0zDpaPy9uR2m1YnTnv/3MJ5RGuly02l6/brNgGbOBHLmP7PewPv0emZETXDizVWNr/JZhOEuYNYFs8QRHnKQOeuUPSkLjKB7ME9pZK2Z1Fk8K1ZlGP/ASq3dF2NjzQcMz6L3GLMsBwSBi3+We87gds4tq+cxFqBa5SD+vUkeCSSnysxlZ4OPOsxi6WnhOVYz+4ZuiEo7tEsSqw92kdqbDDSrXzJ3R7f/tfhgtoiDzCmaCdikrklC2bmKIzlIGClJELpOi0ai8FwMfE2NlZeT9+xcKiEOdO5oqQKy6hhzOyka9j+X7gULkSYlnvHap8RdqoXMF12wgG7kfQquB5cOjU0YEbMtiVor2/YA6mCxW4EvudhnTXX2bd8VKkvKJzJYixv7yg+VH6pvqVYfKo7+uBs1SyJepqa21qOTMh/Cj6SkZAL//FyQFACWJQxbl28pP4j9Z/Lreqkb0eEii+SulISdru/coiuBAor5AQie4XeFKURD8wpcIcngkRMPpztCTM3xoeldEyktc/plEGQhJkhXT/eiq5l1Pa4oFhQOqbsivNbzXPKgc3ouiyt4lJYfsbS7zNw==
@@ -378,17 +378,12 @@ window :
          
          //ajoute les champs remplis dans la table panier
          TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom)
-         Trace(Combo_tb_composant_nom.COL_nom)
+         //Trace(Combo_tb_composant_nom.COL_nom)
          
          
-         for each row of table_panier
-         	Trace(table_panier.COL_composant, table_panier.COL_fabricant, table_panier.COL_type, table_panier.COL_prix_unite, table_panier.COL_quantite, table_panier.COL_pk_composant)
-         END
-         
-         
-         for each row of table_panier
-         	CalcTot_comm()
-         END
+         //for each row of table_panier
+         //	Trace(table_panier.COL_composant, table_panier.COL_fabricant, table_panier.COL_type, table_panier.COL_prix_unite, table_panier.COL_quantite, table_panier.COL_pk_composant)
+         //END
          
         type : 18
       -
@@ -430,6 +425,7 @@ window :
      p_codes :
       -
         code : |1-
+         //Déclaration de variable
          sPk_comm is int
          
          // GESTION de l'entête de la commande
@@ -476,32 +472,15 @@ window :
          HModifie(tb_commande,hNumEnrEnCours)
          
          
-         open(FE_details_commandes)
+         open(FE_details_commandes, tb_commande.pk_comm)
         type : 18
       -
         type : 161
         enabled : false
   -
-    name : CS_total
-    identifier : 0x23071e5d022cd82a
-    internal_properties : BQAAAAUAAADh4cWQBOyZZ021r7dT3le4jkqMdiM6ySUMJ6YruTYRK3g6N3C81lq4MAEK1WKAfN3PuOwRjZ8Kpbq8Yebj1Bv5O4mEv9Zo7pkRKMD8MNDOOfXwjew3bnOltg4ZnEKAMBww+RBaXRay2qTTYS6uHlS19+oPUBOEu6jKeV4ccbRBdYIg2yByzCMtwEzYq0h7raWrw4Jqd2ZUheAmAfQkrFwjDMp99ukgEFjsvUnUhaxGtBvj1r7DFMM8f+8ZCWBpwiataPUcYO6YibwpjSBhkotuY38B5+bMSGHraZYOdvtUdJCrNEyjJn8Bo6fA2QSF7Y2KZERdTHWfLUeOe1jioda/NVu6o4N+4fxxeiLVr9sygoNgzC8G6xFEcG4RjqBupUQphhWEfqGbzfTiPoeUklrua58Vl+yjh54OCUygYDKjafUY8PeB+BMW5EgxAf+YZvJMEd5wL7kChRKr3hOP8HJedxL8qIIqXbMuddYvNObLGmtGjVh0cD7d96lhsbpMrUUWcFG+ORcNwe/vdDeG46KjGxQVoX2Jqg2NdErpKe6+kkYyV0KtOG7V7gGCrqSv+R0LOMB1Sl7JM9DZ4wKF3pybWbOtfOeQYwm+DsR2Wq2eaa2tiIZYENH1iuep9iCR+XAAKVeLXOAeN7fv6PN06uzInNhvbx1mvHtKCTRLXo823U9mxOVsHfSbiqqAQ9/Dn8adl5gP4cUKlPICUSGjgR9bTl2Se5MPqjo9yAfQoLOSPp5H8IpMlaftL7IgYSXE3T7fTL1/vrNYnIlVrtSjXCF3dEijxKFwgDHIQkEUNLn6MZl1mkE9f6Rfp5n9BVdJ7s899cZo4bY+bNyjhTmL3oa07UmDi4KshdccFIk3/4KFbltbybiYjvrzTrb4ez05clhCwoE6H1IIeWq65Q3Dat9S4woZMvYUaQRALGR8Bg32SQzX+l1osN9FYLYpHfzg86MHxs66Yk5FKafYf81+D/989efwDad9PrE76TWEhtnivsAcBtT3lNfUmbIPyrHaQ1h7WvLFO30/4lZ6k5Y9d/b2TXJQ7eaFKZGQLqyrOgingH3UrNPuAACgBNJxtxQkAyxii3ZwjUJx4ucfoz8GZQY84RzSCWkE60fqHDaR8BFwCiXOoBeuVvSREJxpPs+aIGzvxlo=
-    type : 2
-    code_elements :
-     type_code : 3
-     p_codes :
-      -
-        type : 276
-        enabled : false
-      -
-        type : 277
-        enabled : false
-      -
-        type : 278
-        enabled : false
-  -
     name : Static1
     identifier : 0x230740da05a5917c
-    internal_properties : BQAAAAUAAAB4qFOJfyD2DdE59JhGeEl1bm8C9mbOD2EUD4mO5ylSY5CaSs2o3aDipyuOS34gRbgC5cldWG+oypW7BkJfMc0L3IPlMHG8kOo8JfIruouseTROtEKwzWGXsXLaXOFjuu5kjUkcDtyqECNQiYhJYctoKh9Dv+mGFdDj1J883my4bTGV4f3ayG6L3V6X+PSj6xCUbxWkGpH9T28McsG7R6EA0hgdaaqUMi1cwT614VFEcqWQxh5DrA35+2i0aLVRfDdxaBOOPoyxJKloYR1yZWEqNhMknTxnYQZxmElLknTH0sgkVqq9WzC8UM+smCahB3LQCdwwAQYeiXuSK9EpV7069EG3DruZCwestaYkE8XTRpExf3/KxtFs3g1Q9Dc8NIhDjhrbgz4mJv+SuJl2J9a9UU9DYIxOqCZAzlJLSaghesQX7KmnJahKI+CBIEqQ4kbA7UKmmCkQNuzjRB8=
+    internal_properties : BQAAAAUAAABgQKuxd9j+BdnR/KBeYEF9ZrdK7g72Z4ls1+FmL2EaW1hSInVAdQh8mCma2f6gw/5oO5PVqtlE+rfJBnQLjRMZNh0HcINOvFbOq26hktOyByaYwt6iU6nv58yW1oFDSEziWztcMMIKfD3m2ZoBKR068F3BowugceChFr9+Tvyyr3/bK5X8GnpLX9wHckQTfZoGubOwdOsBtyXGGmtvI9uisK7bhYTyUp0eh/739UVJdSYRyR0ov6Qeqt9vZ47o4aJaUYoZpxvUyQjv4Lj34N6t24ADuFXWZAv0o3wC4wOg6THdncWWilNhP0ZX16egAGnZAidn3mH17gb1xihinobBnU7msaSwTuhH8GEDXLz0Jf6WWhYn4TjF5bRDI4DDkSMc12UiMFG1t8apTzwTCu+U9iQuviT2UE64dooTEfBZMhzvNNGPPcBiCxhJGEKI6k7I9VqekDEYPuTrXAc=
     type : 3
     code_elements :
      type_code : 2
@@ -526,7 +505,9 @@ window :
    -
      code : |1+
       
-      trace(pkcli)
+      
+      if tb_commande.NewRecord then
+      //trace(pkcli)
       //charge les données du client
       HLitRecherchePremier(tb_client,pk_cli,pkcli)
       
@@ -537,6 +518,24 @@ window :
       //date du jour automatique
       CS_date_commande.FormatMémorisé = "AAAAMMJJ"
       CS_date_commande = DateSys()
+      else
+      	FileToScreen()
+      	CS_date_commande.FormatMémorisé	= "AAAAMMJJ"
+      	CS_date_commande				= tb_commande.date_comm
+      	
+      	
+      	
+      	
+      	
+      	//créer une requête en fonction d'un numéro de commande et faire des table addline
+      	
+      	
+      	TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom)
+      	
+      end
+      	
+      
+      
      type : 34
    -
      type : 230
@@ -550,31 +549,6 @@ window :
      name : CalcTot_comm
      procedure_id : 1371097107282374359
      type_code : 14
-     code : |1+
-      // Résumé : <indiquez ici ce que fait la procédure>
-      // Syntaxe :
-      // CalcTot_comm ()
-      //
-      // Paramètres :
-      //	Aucun
-      // Valeur de retour :
-      // 	Aucune
-      //
-      // Exemple :
-      // Indiquez ici un exemple d'utilisation.
-      //
-      procédure CalcTot_comm()
-      
-      //Affecter la valeur zéro à la variable sTotal
-      sTotal, sQTE is real = 0
-      
-      For EACH tb_commande
-      	
-      	sTotal = table_panier.COL_prix_unite
-      	sQTE = table_panier.COL_quantite
-      END
-      
-      CS_total = sTotal * sQTE
      type : 458752
   procedure_templates : []
   property_templates : []

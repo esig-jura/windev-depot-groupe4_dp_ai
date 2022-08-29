@@ -172,6 +172,9 @@ window :
          
          IF YesNo(No,"Voulez-vous vraiment supprimer cet enregistrement ?") THEN
          	
+         	NextTitle("erreur : client inconnu")
+         	Error("un très gros problème")
+         	
          	HDelete(tb_composant)
          	
          	Table_tb_composant.BrowsedFile = "tb_composant"
