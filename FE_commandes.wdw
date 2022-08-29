@@ -77,6 +77,18 @@ window :
         internal_properties : BQAAAAUAAABICjHp+wMkm1tifHy6umFge+KxfkpPg4LmMaI+zMODyoA5ubUpjcNyfDtH9/JcETBXjYcLieJN23XgARgiFX2To30nngWn6z6ACoTGOwxlcCmPQ3uUauTNmDUBfbdm71fGQ65a57Rps1XlsCLhloJXyg==
         type_code : 3
         p_codes : []
+     -
+       name : pk_comm
+       identifier : 0x230cb6d8031006e2
+       internal_properties : BQAAAAUAAABOtc9iDJa951N/BiPs1pM8RQnhAnWbJx474W6TbTOCba7r5aHCbuxE9jo7iSE45As5PPKgFQc/aW82gv8YV1KT7M9vFiol7oNIBQfVTriuAQC35MaALE/sOYBebKU0FxObB8JkyjGLcHwz8OPj9XSFjqaVcIkDXRMbPcO4OOFbHvemS1NxTKUlf6QJi+7w+2d4eNJNhZvrgfc0tdojIkG/KX1BwmHf1HFl9rSx1Q==
+       type : 2
+       content :
+        internal_properties : BQAAAAUAAACLHvOFUyWiQNfk/2yE1pv26vuWWzF87sq/MU5yIa8IRJFiqLalNIqYggzxRdR8Wzt4YEWm1AiFXZoIY5jRfpo9K8STHRc3Tenu2irsvU1GgO/GhjodvEfKhPA8wY6QiWonQFTWj7zxm4f7J2Gv9lotRRI4OZmGJ2eSqoPXRagVVCo4C7V9fRd/4gsp5N6/MvpqUYNKsGJJWk0aquCkvQ+/C3dMAXMLhQn05mUzkKjdHd8Ab83olLMfh29NYOsm7JXSCcUVzKIxhvUaKQZvqULGG52ylXwPf/BmOOXzr4GfS7bcZxzuW98H4WyUfvAh+KfWyeZRzDrjQgGKaOeYntf01GA923OofEdvv/YOnuKY5QmpcPc0kOl5eYpTRS8/hINKRe+djwE0Sn9vIWrBU9qDpYnok40zy0GnNXUZ0OwOZtxjT6Rm0mFDzj21InzmeMXVmdeMSQVubjVuqMrBG11gyadgFbAwe+80w60oClLNa6h5Fm7CH1Jodm0y47/mCY9elbMGK1VGOe9Y0luJuWhO4b8fnBS46sE2jXGA4j0OUsBt6JFb07orjt/mHvgU2CBHLcRnkFnPzpPPELuaFrEyAYu4t2tLRWUgSLFTqXW7OoAjysKXmip6j2MSeSilHBHgDKUweAzNwQQDvN3r72OjfmOHWDSI3ZG2mf4CnWdoJgOIn5sjzU3fVmcsELYnbMD21hHVGF97OPktUJ7TzXf7kG0yE3PEPKAryKmYGYGooMWRoECyikpgeicj03X9obge9ALdlEaImYKGKw3vl7r4hHWUbw==
+        type : 2
+       code_elements :
+        internal_properties : BQAAAAUAAAD2dBSNc3a6Pb51JcOPQfofDNkWmZ+KeC9lWOIr3GJJIrjuR0zIXt2/Sdaa7prpRPxcF+mn6V36RGfIcHDg/sX+ITvuHlQJGpbnZ7+3sm4PCcJmjD28oQY5MWe8Ka0PYLgyX+UIU5K26iwU
+        type_code : 3
+        p_codes : []
     type : 9
     controls : []
     code_elements :
@@ -125,9 +137,13 @@ window :
      p_codes :
       -
         code : |1+
-         open(FE_details_commandes)
+         i is int = TableSelect(Table_REQ_client_commande)
+         
+         
+         open(FE_details_commandes, Table_REQ_client_commande.pk_comm[i])
          
          TableDisplay(Table_REQ_client_commande, taCurrentSelection)
+         
         type : 18
       -
         type : 161
