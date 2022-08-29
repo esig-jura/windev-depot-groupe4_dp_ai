@@ -195,7 +195,7 @@ window :
       -
         code : |1+
          
-         Open(FE_nouvelle_commande_1, tb_commande.fk_cli_comm)
+         open(FE_nouvelle_commande_1, tb_commande.fk_cli_comm)
          
          TableDisplay(Table_REQ_afficher_details_commande,taCurrentSelection)
          
