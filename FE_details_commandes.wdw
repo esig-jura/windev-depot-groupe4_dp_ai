@@ -151,15 +151,57 @@ window :
      type_code : 23
      p_codes :
       -
-        code : |1-
+        code : |1+
          
          //Permet de sélectionner les commandes à l'unité et d'en afficher les détails
          REQ_afficher_details_commande.PARA_pk_comm = Combo_tb_commande1
          HExécuteRequête(REQ_afficher_details_commande)
          TableAffiche(Table_REQ_afficher_details_commande)
+         
+         
+         //afficher le total de la commande selon la sélection dans la combo
+         HReadSeekFirst(tb_commande, pk_comm, Combo_tb_commande1)
+         CS_total_commande = tb_commande.prix_tot_comm
+         
         type : 33
       -
         type : 17
+        enabled : false
+  -
+    name : CS_total_commande
+    identifier : 0x230c5da200f68db7
+    internal_properties : BQAAAAUAAABwazNggUFoGu4FUroVJy/ThCbGGwPc4VpS1T2318aKfqxikywQCY5aObeVeqLj8d2M5iem4faDca2Ildjn3inJmvew4X7CwV6ZRKOvwxx6kFrz/oBXA8vjNzdc9JELFqyMfxCvxlULnwTHZJOjpTG6I4e1g5ZSwynXAuk89Bex1FkaoCWkNrgAHnAkqqs3gzD3jNDr8q5cFWFp2JIFo+6B36DYZ8Sn00ZVZ0Bvd+C+ih2j3oFcBuv+oxhQJRetyhP9K4ny0GeExl4W28gpVz1Wwu9RTPfQbDFZtbcYP19Ky4WfJ3QYRJR6yMIKodhWKwl+4IoOhT7ZsvK2ZX2QRgwUUJCaVH7ki8TPMnHVdTlpc71LjQP4S6P7uOhiGNkdTN9NTw6eEW+q2Wb7LP3tt3cSoWMg07V9d9TMhavH2usn5z9qE6ULONvc6VvajU5vfHEnMoTwWygcuYKM5qcVBvL6uUYLKS8joCydUBDMAWDfvq86L8hdppBbRcKJdc19jteUvB4CKbO1qWSBl50BKLxlhMnYp8nWLv/dOW5qSm15F61b3o90Mk0p0PNhSPSZ0L8fxIx2Vpv71LyIhwzIItDnLdNlk7CKKubAKLqiuLaSvjCEzAEspddZmIVcDtDU77oFNd18qAtR1eMAEsJlhA2YOPxkg5e+k3TfHXkbWYq4mSWSunnPTEbIT2AxCyxpFKjsA+zgaKZq1kUwZzhB0+imEcbg5nbxxJWsvl3Y3NLpG0Uwd510MCC58VBklNJKGZFmxC8Q+JHyrROFpKqWO31V6B94RF58NOhkajfR1MAOVLh9vYk6egb2A1X31UxLun7Iqi+tIgbkb7MS4AsyEhayvgfMvhwfnnBBC7JzwA3vdN+zg/AzOuohHwZieLZTs9W22IBM+x8zH4WLbzjOd/fpSKTFUih8ywPUMPCtQbQfI4Ss05RiwtR20uPv7ULe0O0bJsDh5k7JdOddpwb8XBE7yuDs0zSKez//srwMAjbfkkEzETmr/brl2wDvrfO9088C1HiqAMGBDjX/LLaqd6wyBc2v466WjFrF5URmVCwlnoCMn6F1CldhAkQdVbhI6G9xDJgVtO9OMvycTHpffdXePNE5b1TwV3Wl+BQiipFnkab8NchmoopNDwCmNwCNOKRX3w==
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BT_modifier_commande
+    identifier : 0x230c6ae201494e7e
+    internal_properties : BQAAAAUAAADtMSRqZRSz/FYB9VDRnDZq+yxJueUqQ69iNH5zR4r2dHQjbKYGw8WH9HwuqpDEVVWCRmn8VoN0ywd12+fnkoaNbThug5anZeXwB20EFgyVJI+mIuJRIZiOjKHCZK4x4+R22JPg9KuFJhGuKJ0VOdaoDV1aGX9XNyaCVeFhnKf6KYSDuLxrH+2QaoJgER3dKK4ZtXyUjK2wAUHz50gmNx+yHhR2qCIzplVNVkNZemBfXxSwdo2MUuvxTZ32A2w279rbq753uthZRDTA7zH+6LnKX5Z/7qqUN1vnzIMYx7GpHGHLCNsSv65eHQMVuplMPTcQW2U/Xss/JwYn0nYr3HC66Z7imSXE6tJCGVOcO31xHIRAAOrFzBDcqYuMLBYXZvXYMnaiq2DY6J4pXcNajYqkTfFLEu70QZ5JMUwP+VuwVJDYZgJu0Nz1c7VNc4itQGHX4FTluerfBNiM6cMlpsyC5e459zHGpzAS/Fvx2WdAmnNdrVNFLdG7ShwNkPA6ZPgZpRhr8hajp3+83uflBC/xzlweuQ46NfXdCDkLH77i+N9OO5n0AA50zz44lehPlUNC2MJXiylF/02AbN3LA4/QrvBjDRiMAI2eMl65LGQAy4rgWXJfaX1n6y10B+oKFeEiKfElMroIq15N7J72qt0GfplNpMNltZyUgfRj8gGGUZZgcxP32ZoraLidQX/qL7HqjIbxxssAKaBMWjprTH29dc04PX0ggmEEgP/ZbHUkMrX9oa200m7TmQf6yuAOoXk/OhznlgGTcaktbUPc5bm3n1RcISBLvKMtG6UHTB9CpnY4O5XR9+Xung37f76osUlSlA/0ovNfRo6lOIj4QU9VcvlvFxkEZ8cJUQwo/r8N4GE=
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         Open(FE_nouvelle_commande_1, pk_fk_comm)
+         
+         TableDisplay(Table_REQ_afficher_details_commande,taCurrentSelection)
+         
+        type : 18
+      -
+        type : 161
         enabled : false
  menu :
   name : _Menu
@@ -189,6 +231,8 @@ window :
    -
      type : 230
      enabled : false
+   -
+     type : 11
  code_parameters :
   internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
   original_name : Modele1
