@@ -1,0 +1,65 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Etat1
+ major_version : 25
+ minor_version : 0
+ type : 3
+ description : ""
+ subtype : 0
+report :
+ identifier : 0x530e18c90002f5a8
+ internal_properties : BQAAAAUAAABuS20+ORMBpJzoNGzyYljxba657nl8g5RYLuj1ktposMliWXf2+HmMxTll7zicsK0kufjfZJkFUCR1mEP6uukxRS+LAKhlKybmFz26jDuAVs+udTcwkUuwX47rk8ocWFeHs251BEgtBie7uSYkHHHhpTRzvSVR6mGUjmwo//7D+TQ0ndNQBBmt+VnKPh9ApRjvgVZVxynxF4YoxvQQ/XkJdVf0INLIDlqZ3y98Igt0zHcNAbwbltguVKvrdNqK1A34urN4jfeI20yrcTBq7XePXfLi780BWIHwBn8eYilusNpI81fJSIzszh7+GFoU3Qn1mTOzQPunJgtOKr0uta1Rjm6dOw8fbCEQ9KjccQAA3JCiOl4hSYxqpgP8d20REwNiGasNalf4Tkntz9Je+TwyxnyJmftuHznGOuG4AJCkpmXt3WiCTWzNTKWZTo1UpAjRHARxJVkXZ3iFg+PvbPdCELty6RhOVRKHuXlL+3SYj995awcmD9s0MCVnpXneuFoJog6g2vtRuyo4GJvVPFZX640s6MJxzzQNxy7h02ijoCKxK2DEtdY/bYv7Rx/AfaGnal12nWzThHkS75aDxPj9zSBC3s+VCeXDL2AsM0X86wmBsfjnykWyK+pNUB4WKFe2+74Js1u3AIZ8nJQ7VC/OS6f06hWwESeaCc0rmGkeIg1wgVx4mhnt0H08o6B7h2qSlfxi7rHFkOU3KKc1Q2meogjl9pbzTY8E73BmjHOAbRHsrUBAcPriOpOewwpn0A745fLmOnkMOSE+BpqEGIxIAQi6irZqiiecKKATo5JIJ5fnL2+0Fp4ai12j7dZEJwCBBpdtHddCRkctvSJ27o9+VtlGSZG/g5nU5JczzwmPMW/hjYfKf/toHu0pLTb2Kto1jHEgbQazy9dy1D6b1V4r04+vHlqPdGwpifhBV0+rxcnkG7hf7YFE4ZCe+W0=
+ languages :
+  - fr-FR
+ blocks :
+  -
+    name : DEBUT_DOCUMENT
+    identifier : 0x530e1907002fe73c
+    internal_properties : BQAAAAUAAABVPJGZpGthK1u5OwD4YzPBGtSdbe8ULRy9ZWoMOPNyafUymk0a3ztA8miUhF9YEtmRqPrGIUg5kTzRgmLydgjlyY60zU5e7HiQvZwHeM9ccQ3EKPYsc8m6RrDQ75Z4tDJptXf5FpDXukvEDrPoTmNdd1IfZvzd6CdRpeAZGvCxmCnYef/41w9/f0rzAOI5093m8hkEk/mS5HIIEWXcDjgsmkKX8DpoGUyURrFF5JnKSxcBf5MqvBYsa21TmDPdOw6rF6Fpbw+J71nrRI++OII=
+    code_elements :
+     type_code : 30
+     p_codes : []
+  -
+    name : HAUT_DE_PAGE
+    identifier : 0x530e19070032e73c
+    internal_properties : BQAAAAUAAAAx2D2FBP/xg8sp49gQy9BQoG+SUCC1ug+mn2CfPiIPWLAZn5OZvMF4KJjN9koyoEGb/3MUJyghcD816hDDHjGHvlLqzJf49a40xLK+Tk8b91RR1JOlrs56Q6q0AzIUyKVQ434joMJmGL2rap2fYvWtJ4LHzhxKK4txYVRrkqRLq20k1/bPe0v5Mj1Ghbhox63I9NLLFnjsCRE4OXutO7vp3za1RfyeaTTUYosWRY7DatT2bWWBEliITx+lzF+RXa93U53N84sVY/WTmHNanCY=
+    code_elements :
+     type_code : 30
+     p_codes : []
+  -
+    name : CORPS
+    identifier : 0x530e19070035e73c
+    internal_properties : BQAAAAUAAADh2u4zKFOQpjP3gCnsHxqkMR22YzD4KMD8dEI3HzRtAzkfpXZLagzoFFceukWZKjjlH1yNefgKOpTVkKygC1sSu8rV+jK2hFRz4Icuyap6WIpe7P+6hdLedqGXi1SfcgP9OcaKLtkEWsuPBiy/7eRhwbnFW4cINdY/407qdwrPrVSSXkrMSQ4Jt7wFzWgzmOC/y426dOw3BnzCarWA6Donm9hISNRDc2G38RfuqEN+VPlDM0mHEiE0sICSe3wu9BXmbg==
+    code_elements :
+     type_code : 30
+     p_codes : []
+  -
+    name : BAS_DE_PAGE
+    identifier : 0x530e19070038e73c
+    internal_properties : BQAAAAUAAADpwbX6gzyhJDQS4SrK/I35ccBMaIMU8tyL99xQnOPwxvVLO+wZF2GSYu2yf05ts7FJImJ73Z8DCvDtA/xNkO5WOubgHtw/TorFFbNbEXI6c7Jw8plibewbRxTGdpiFv0eiSXosGPyYzAS3PFFqHHGcFOSSksOTLnuEl3wXF4UG/uxqegH1ORc4X+9Ov1Kn/nq1ME5YBAForxDE3am3je20Mm08GOpjgpQH+tOl6scQRtBNBBqW8IJnN/aJBvE4OVDFNA8J0cLAbgH+KaI=
+    code_elements :
+     type_code : 30
+     p_codes : []
+  -
+    name : FIN_DOCUMENT
+    identifier : 0x530e1907003be73c
+    internal_properties : BQAAAAUAAAC3eFG6OlZLCm4bWoOpl7Lz9XQOIryv7bOGNXjyJolQRasWudmBh6Mpy1ImWONJaayBBX8tbDX4/yMe2tB+tS3PCqkqWLQQktfYWG42i9HYsQIhrowQedpSQmdaKzCHnUbqFjYNKAjjTal4iu5motkoEw0mRVKykjH01W9xLgtfuKJXtOLyD/VXiR04aCxvNL6nQjh1BU0hCQBgPHbMIwQBeCflKO7r7tyjL/vdjBalXcrRy6lDke/KMGO8IrKzR9Q6b12AL3xhlEeB5cs0cw==
+    code_elements :
+     type_code : 30
+     p_codes : []
+ code_elements :
+  type_code : 13
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MonEtat()
+     type : 327680
+ code_parameters :
+  internal_properties : BQAAAAUAAAA6ih3UbgNXHwTtiPSFUEj+2fi/m7v4QV2rqidAupM=
+resources :
+ string_res :
+  identifier : 0x130e19070009e73c
+  internal_properties : BQAAAAUAAAAnMYFQ1bL/vz9ehh7L22SNNSlIzGTOI8h5F/WtgDNP
+custom_note :
+ internal_properties : BQAAAAUAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
