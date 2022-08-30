@@ -10,7 +10,7 @@ info :
 window :
  name : FE_clients
  identifier : 0x22ff7ce2037ce75d
- internal_properties : BQAAAAUAAADAC4YAGCunxbwdkwkJahQSVhZ3F/wntTbdgUauoMyqgyWHieumGronYXmZC4xF9dOU41wSRf+kd0ACIMruSCc8aTTLfs5HA1ZB1dyYFiBA1JAD1le4BBeZs/93sM8Qt5fS70MGnw52Q7PdPli0OuZgZaYOpjPgvbGFmSZqeDNM/iofQZflnGQI4GMMuUiJf9xr5UwYUgohzSbkyRDfZK5IqJBS0Uha95b8RaGm5QJHjj9MLVLiFbe2n9/OutypjzQ1npPmqVo6qusO+VvYIkasTsazRhpi1kURrbdI6sQcY/6qjOddJXa1H2OpvJwhLq+cOnDyVeMAYG2AmEXe0ROHUcCbhGRC+D3g3SdypGryXMrHhhnLW/P79uF/Pf8knQAwtbbAsFkJjMkNeOc3Dx/wGgigNNzjeQIdoLVX8y5tFgu9h+7EEHyBByaA+W/ita50SfuNIDOo69ywZdR9zv1lZt47Kux7tfDKSUWuRiQtTBLV4KyQvbGZPuHLriRLXMxSssaVbDfxkwrfynnTIBj6FO6KrZG2vNd4VNU8ILGAwrsPN8XfYnrBcmd9PCjvQrCwNruHfRy45veUQAPvJnyaz1batKUm5SQ+ixib3xdXkQXKJzWcORGoeItPhKPWlvyWu/dT5w==
+ internal_properties : BQAAAAUAAAAyihkAIKBhR/6EOS2X/ZWq+3HkygMSjd1OHlzl9XHFezUWyA7oFg49G9zGrMsBRwtuuyvIJflr5bYJ/5zrVu9a4qRIdHlx6IbUG2xRymNEz8X74C6GwDYvJtCDl0auKjl17L8rcR38s/sbl0aIi2wugYJB2JBTqolPHU2cwxBauFI9YuwbOk3IOOIhFBtML5TivEhpzH2YAfhjdFMUNSYWVL8HTksornHHWhJ0Lq2rZLf7qyy+sshB41dmEp8SI3rgduRsG0mXaq6ZZqst6U0lponxOKyqAnh4/rW8nylshB0AdSGy2a3VvlaTLBZmUKq7x8D4u+SRxdWslDbESkUc9NxQsBKlQibw6essAHMMAfF/Fe+/2OdQYD/Jw78JDcnb4ZHO1JRNPx2dRK+XrB3ZtRD/dpS+O+XZ+A2XMyPXZVjbhjSsJ6ImQ6503QtVr531sxSJHG58oKBwlfR1wyFOIVSYeHACuwmylW0SjLcFoamZa3qsyPvgEPfRBHQkrCfvxCc/FLgNwMZ/UvOzvwpHk5jzD+X2oMb0+ZbV/0IYsMX6JmEfDKUzeWRQXl2T/2ymb+wx9b9cKCURBG7m3ov5bQZKulS2h53w1eyh64fz6aqTBy/x2Vg9Eqr2VtowsOtcBck6iqDyZdyLZYiYfdFJoWnd7CQsqvduVY7V
  controls :
   -
     name : Table_tb_Client
@@ -246,6 +246,40 @@ window :
          Open(FE_nouvelle_commande_1,Table_tb_Client.pk_cli)
          
          //TableDisplay(Table_tb_Client,taCurrentSelection)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BT_exporter_client
+    identifier : 0x230e0d4602a3fd44
+    internal_properties : BQAAAAUAAADE5BIKa+V5eEDk4y+ao0/yUZ4dPBGxOAWRsExMCDdcgdYzkh0aaBYgSf/nk7dM8SfAw//E6Gja4T76I52oDcUATSYDSch8IkX3nl2JCMhRlXPcn0WG3DHEOELpaqZG9sgbXoKWk13GphWy1lYHb4CPXSCYpBd5FwOotJGq13DCsVRFksMqLJWxNchzBnzpZLuFssSdC3zk0PsCcuGwJSKuthbdgs28xR8buN6RnnBz72m3sZGmivVBkcfOvBak4ecm4GfG/SoGBw+aUa6SYOfv/BO2WEiHeLQr1xS6URlRLeLBtcnPZiHgwEJep5I85olVwtQJVlAS+fJZE3aLWB8+zn5sTVyZy0R+hUXQNtLxHy89JU1HnQnf8xjpPrkRUP8AszMIiDj4j/vgY1/Z8YsCPjMBuQ4C+haHcPX6AEHoLbcnoESJK2pfNoXm1aQ96dt5NmMq1QMMJmXzDp2mazpB8fSMwyEevE/YmH3NlMzv+MlpnABx3YKHkZV1xcIUN8kP72iso3+uFvouZ+VHuHXqsnCsDPmAIWRFBAP0tLwljKwHrsN47b4I692QZo8slOGcIrW+AkDElHt4rwPfsUmsHWvmwhRTd0JMXEhz6NYe0aH6vs6uhhrZTJuS3VOCphsaUWk/J5+MM4R+acaxxlZTQsDNcply3G9WqaOl60rwWL560TJffeCvuM15qcRpSpPCkhWioT4VqrXKy4/cY1jvQeErH9/cR4KApL08U7LUoY2wVlmFLcmVvg6hTn3ztTwmkZn4cji/
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         
+         sFile is string 
+         
+         //Vérifier qu'une ligne à été sélectionnée
+         IF Table_tb_Client.selectcount() > 0 then
+         	//Ouvre le sélectionneur de fichier en mode création
+         	sFile = fselect("", "", "Sélectionnez le fichier", "Fichiers TXT" + TAB + "*.txt", "*.txt", fselCreate)
+         	
+         	if sFile="" then
+         		Error("Vous n'avez rien créé, veuillez recommencer")
+         		ReturnToCapture()
+         	else
+         		//Lancer ici le traitement du fichier sélectionné en appelant la procédure
+         		//dédiée en lui passant en paramètre le nom du fichier sélectionné ci-dessus
+         		PROC_ExportFichierTXTDelim(sFile)
+         	END
+         else
+         	Error("Veuillez au moins sélectionner une ligne")
+         	ReturnToCapture()
+         END
         type : 18
       -
         type : 161
