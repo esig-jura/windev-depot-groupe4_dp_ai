@@ -168,12 +168,13 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1+
+        internal_properties : BQAAAAUAAABUHz8hVhFi02/J7EhBrMlSNO0MeAqWBppfCjnxm/4kgJdm7XWgB5T6wjMexC1lxpG0E9/miOIxDqpCyq3t86PoLtBkATH/1oB8x09XjEnNP/qUDpwcbSPg0NLupmnY36w8JgJ/5axk6CsPJRVV4Ib+UFiKlFTTIkF739C1c2Up+mtV1Q==
+        code : |1-
          
          IF YesNo(No,"Voulez-vous vraiment supprimer cet enregistrement ?") THEN
          	
          	NextTitle("erreur : client inconnu")
-         	Error("un très gros problème")
+         	
          	
          	HDelete(tb_composant)
          	
@@ -183,6 +184,11 @@ window :
          	
          	Info("Suppression abandonnée")
          END
+         
+         CAS ERREUR:
+         	SI HErreurIntégrité() = Vrai ALORS
+         		Avertissement("Erreur d'intégrité : cet enregistrement ne peut être modifié")
+         	FIN
         type : 18
       -
         type : 161
@@ -249,6 +255,13 @@ window :
    -
      code : |1+
       PROCEDURE MaFenêtre()
+   -
+     code : |1-
+      
+      SI HErreurIntégrité() = Vrai ALORS
+      	Erreur("Erreur d'intégrité : cet enregistrement ne peut être modifié")
+      FIN
+     type : 34
    -
      type : 230
      enabled : false
