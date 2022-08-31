@@ -44,7 +44,7 @@ window :
      -
        name : prenom_cli
        identifier : 0x230479fe04d80b05
-       internal_properties : BQAAAAUAAABlf8R2DegmMByVM5s0nAe89dnjb+UnLyuG+N4PGKhgc19rUgPjxHHe9467JO7Sn+/jmv/Z+vkIIeciU0ysT3HAODSgprVGGX5o0E3wkiaJkFGHiuWx4qEfWJZO3Doe/FjLfYYFMvmKDRU0zZinXuwP7IGgQ/OAU8fR/5J/v3hhyWsP/hNO/mF7RUkk/7VA+Ly2Q0WKaUVKJDZcgGD7wfwWu67IZ4XVPn/sOkIK+mmR
+       internal_properties : BQAAAAUAAABDneq8SypketrTYcn2ws0am7eZrSORHd3UriSlIqZmcVVRWPnhxk/obRRx2iiQ3a25wIUncBO+k/XQ6RJ+hafWFlq23Pvon+B+xiOGHFSnvk8VGEvFopklakzkRqyMDm7hCxT3TOd8f5uKk9KZTP4dmjfu9U1uRTlHZQjB+T4bBylNvNWIhOuFU0ci+a9G8rq0QUv08/P8VmQKPqIF1+Z8AXQGuTcbeDmqeABUDEez
        type : 2
        content :
         internal_properties : BQAAAAUAAADM3BMnK/gzwW0eojXaDQLu8Uean960GgEcjieG9BrsJWPz0NKH6N7LKJhStzyREDF2ViYa6fP8VZbvnvVGoq94nzjwTeLHsbCe/yPpTpRXAGyn9ZVrzcRKj4GrkC+ucd+jYaxwonyMNwwW3pNNipLOK/GTvXb4/Dz8Mq1MzkBFOGWoecVlhJk7p/zVFXN5bNkUX4TYkC+0bEceIeyHtqbNnGtxnMiHR1KcBgzlyotle5JtvAqD85F/8Hc7+t0GK4Pcj9bJ+CNvYU85eNKyf8FEaCNol7NaeIh0Wg3yETk/f21AG6tPiG+spQvFBoHE6zYxCDLWTjrL6g1nzX6FxZqsAXhz5HBTzPboDbsBz//OFgpYQJcLKN04v93Mo0ePG3imILmPlLcuQDwk2RLCS+8MpOeM8V1/QUZVuVbi2IJn1SSsd7wNEpjEl3cGsd9+7coM/+fMukTMNYFHKJh4LZJJCF/6nYHXVf40DikGV4xObM/FMFJ5wLA/JqIQA3ZwwkibdaUmpEwe9vV5gptkRe9h0G/llJdtiG4wrkG8fWsnz6VNLu2I/ujIUhIaOEl6yfn4g0wjYWjzC7H8xt+twi47gvPqpfQSRXI6VRd5MCfCcU1FFnYYeRLtpWAoF8/vVaYnquFmueu9+Cu5AcKNZKuBpvYgM9B0wINDS0UloXCkzY/X0lhypG104gBiaFK0iXL1pS4hEdwOPMUq5ZscMBFVqTRfZMk/J60gajXcBxRdHyPUdKOyHH/NyctjeBECJsFA
@@ -230,13 +230,19 @@ window :
          //Affecter ce que l'utilisateur saisi au paramètre de la requête
          
          if RB_filtre = 1 then
-         	REQ_filtre_prix_tot.PARA_prix_tot_comm_petit = MySelf
-         	REQ_filtre_prix_tot.PARA_prix_tot_comm_grand = Null
+         	IF (MySelf="") THEN
+         		REQ_filtre_prix_tot.PARA_prix_tot_comm_petit	= Null
+         		REQ_filtre_prix_tot.PARA_prix_tot_comm_grand	= 0
+         	else
+         		REQ_filtre_prix_tot.PARA_prix_tot_comm_petit	= MySelf
+         		REQ_filtre_prix_tot.PARA_prix_tot_comm_grand	= Null
+         	end
          else
-         	REQ_filtre_prix_tot.PARA_prix_tot_comm_petit = Null
-         	REQ_filtre_prix_tot.PARA_prix_tot_comm_grand = MySelf
-         END
          
+         	REQ_filtre_prix_tot.PARA_prix_tot_comm_petit	= Null
+         	REQ_filtre_prix_tot.PARA_prix_tot_comm_grand	= MySelf
+         
+         END
          //Ensuite on repeuple la table IHM avec la requête
          Table_REQ_client_commande.BrowsedFile = "REQ_filtre_prix_tot"
         type : 17
