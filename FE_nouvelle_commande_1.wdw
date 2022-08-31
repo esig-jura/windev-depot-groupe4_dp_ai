@@ -426,7 +426,7 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1-
+        code : |1+
          //Déclaration de variable
          sPk_comm is int
          
@@ -474,8 +474,10 @@ window :
          
          HModifie(tb_commande,hNumEnrEnCours)
          
+         Close(FE_nouvelle_commande_1)
          
          open(FE_details_commandes, tb_commande.pk_comm)
+         
         type : 18
       -
         type : 161
