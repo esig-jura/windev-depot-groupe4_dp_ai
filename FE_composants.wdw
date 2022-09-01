@@ -124,8 +124,7 @@ window :
      type_code : 4
      p_codes :
       -
-        internal_properties : BQAAAAUAAABUHz8hVhFi02/J7EhBrMlSNO0MeAqWBppfCjnxm/4kgJdm7XWgB5T6wjMexC1lxpG0E9/miOIxDqpCyq3t86PoLtBkATH/1oB8x09XjEnNP/qUDpwcbSPg0NLupmnY36w8JgJ/5axk6CsPJRVV4Ib+UFiKlFTTIkF739C1c2Up+mtV1Q==
-        code : |1-
+        code : |1+
          
          HReset(tb_composant)
          
@@ -135,11 +134,6 @@ window :
          
          
          
-         //Affichage message d'erreur en cas d'ajout impossible
-         CAS ERREUR:
-         SI HErreurdoublon() = Vrai ALORS
-         	Avertissement("Erreur de doublon : cet enregistrement existe déjà")
-         FIN
         type : 18
       -
         type : 161

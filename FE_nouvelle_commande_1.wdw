@@ -232,7 +232,7 @@ window :
         internal_properties : BQAAAAUAAAChOwAioX13i8coKi5Tf8ais3kqq7cKlPrmkmsypJ12nxRCoQxGGhR6ziRVt92HM5eXaYd4icaU7cbeZh/At74HdP0a1ynLd2KuqjFxdFogwYmWdp7YB+OEuaQCYa0Bi5ZrRIKA8GrDIPhTm5JGQL0QI8Oj8Sp1B/CkEkXVChWZHA6bKhfGzzblI5CPIK63o2DdapxASa0jDVcjNFDssM0uo9zkX/WvEk0+zta+tq3V
         type : 2
         content :
-         internal_properties : BQAAAAUAAAAtP3hr+6fXAoFItF6CNBCy9AT5pDopABDCG9wbsQfp+qAb52AfiA6myB/U4QrX0eIT13NjSv8vOZ7A6HBCUqC5/gFHyKTeGQqqyi0H/CQMXmpMMArIiSrv9/DRc51j+v7MyjIBrp33AnIonISID00+NBrDzPyZk4ciS1OqAhmxogAhEh7rdcIVk9pHEf4tKdLZUYwrwU+/fln3BqqGlqjiyZLbwLNxbpYq3ypZRBJQIuwjk/oyMkNaCZ/eAMRMPZjBZNhbaQdJS5HSQSILHlCFy0+a0rKEKbfYdNiJu7ZCmepX/jfUGMQoVQiBpckEstbhEoWbwIZwXKB4s8vFRbgX8IK0E1XulvvD9r0S68+lQ86dYVxREF/MxjO47XMZ+bHLn9vhJLqwLMumdj0pusLAwe9XMH/WEZuLjip4AE14pybzl/JV8IQ/AMXv03VI66VJgM101xKqhYqEeA+Uf9RvpfqEEVEQvtqxs9Hu2QbQvlOciieV3j+vaHmhfFMSypYCE1prGfbiJvpKbLn/eG2evBI0GIV2KQAlJb8YFdnFHHT9I13mpjDhNoI5tDlSDBTWKd6/wduvWPszkzSMA0P7CV+1BHcUb7tgrLJQg5wDWBe4gJBx9xlvnlxmC2Ar1fNlkYut3u9B7xJOhZSaKKOX0+ReBcbtw45tNvrEg/zbUiJsoQqIjvAomQihBEfiEzxnJPE5XlkEKVNAp5asfADAYN2BDRbGC7wLp9U+GjQisS3QN97PzunyjnYk8iz8IrfZNyzks4a6AXGCC5UGLuJGfSIu
+         internal_properties : BQAAAAUAAADEtozBkut/kyiyT0eXYY1ql8nQkoWTl3vn0sOgLmbrZ9UFNxcyfLnRsRMnrqE1a3jBjKJk7V/46ZL3RAkae8c/CVKYI229Ipp4wxrvuj7WMP+PUtmcTEEauA34Uj/luOoWnnuOkrWEzPz9X/rOGzATSCskyWPGFFmA+nr9UQmwzM597rrUkmEYeEh15bZu9aflbFt5lJrMMFfswf4vaxSRMLgZwTs5gElGKBe/edqP9zK1jzY6AKhMSvh81vstcICHYWSgF+KFN9f5nOzyFqBSurz5Mw+Ar5zl8pl0izMSmh93uJlxWBbEBH6AcgKHkL9pHqK1FsJYuFFtwxIA2FHoXRwIgj9LOaMSRKw1zukZSOPTTlaHpcrtY5T7kVHJayBoj2kDXY9VAnM5cAKYuqIJ26ricMwsin6GR53iz+14Evoe4pbGwmsQBfCG5ZLUF9x5gxj0RAjFSocT6U+tqcKW6wWX/VaEiTMufirsgJwKZQnVXYFs5FhqZyosJuIk+Mf6Ms0VwKx7dSXB31UoWnMj2gcjZLSwSGVKdgRSKP8/a2qwoElrRHu2z8mcdGCmkJPMYBdBsq9c8+ZgbkBtYyOC6ZhStOIcThTRi1suBCpNz6UNC+yAF1jIw493vbEnsQCrSjy1S8t+Bk3ZVLCjCBNCXXkJfUmDvORNY4TNJNNCHRcHV2JawIa/Bkaro92yxVoKPrzVe+6y4Yftgwdb3XaxJxnnl03jGiRKbMjJTfzRoDYmJ2XLaWdSO4N5xgoVany3cYUnBYOWerVRRRHJf/4+n3YcClhcxLj+Jg==
          type : 2
      type : 9
     type : 70
@@ -400,26 +400,31 @@ window :
       -
         code : |1-
          
-         //ajoute les champs remplis dans la table panier
-         //TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom.ValeurMémorisée)
-         
-         //Vérifie que la quantité en stock soit supérieure à la quantité commandée
-         if Combo_tb_composant_nom.COL_stock - CS_qte_composant < 0 THEN
-         	Trace(CS_qte_composant)
-         	Trace(Combo_tb_composant_nom.COL_stock)
-         	Erreur("Il n'y a pas assez de stock, il n'en reste que "+ Combo_tb_composant_nom.COL_stock)
+         //Vérifie qu'un composant a bien été choisi
+         if Combo_tb_composant_nom = 0 then
+         	Erreur("Vous n'avez pas choisi de composant")
          else
-         	//Vérifie que la quantité soit supérieur à 0
-         	if CS_qte_composant <= 0 then
-         		Erreur("Vous n'avez pas ajouté de quantité")
+         	//Vérifie qu'un N° de commande valide a été entré
+         	if CS_no_commande = "" then
+         		Erreur("Vous n'avez pas entré un N° de commande valide")
          	else
-         	
-         	//ajoute les champs remplis dans la table panier
-         	TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,...
-         	Combo_tb_composant_nom.ValeurMémorisée, Combo_tb_composant_nom.COL_stock)
-         		
-         	END
-         END
+         		//Vérifie que la quantité en stock soit supérieure à la quantité commandée
+         		if Combo_tb_composant_nom.COL_stock - CS_qte_composant < 0 THEN
+         			Erreur("Il n'y a pas assez de stock, il n'en reste que "+ Combo_tb_composant_nom.COL_stock)
+         		else
+         			//Vérifie que la quantité soit supérieur à 0
+         			if CS_qte_composant <= 0 then
+         				Erreur("Vous n'avez pas ajouté de quantité")
+         			else
+         				
+         				//ajoute les champs remplis dans la table panier
+         				TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,...
+         				Combo_tb_composant_nom.ValeurMémorisée, Combo_tb_composant_nom.COL_stock)
+         				
+         			END
+         		END
+         	end
+         end
         type : 18
       -
         type : 161
@@ -460,7 +465,8 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1+
+        internal_properties : BQAAAAUAAABUHz8hVhFi02/J7EhBrMlSNO0MeAqWBppfCjnxm/4kgJdm7XWgB5T6wjMexC1lxpG0E9/miOIxDqpCyq3t86PoLtBkATH/1oB8x09XjEnNP/qUDpwcbSPg0NLupmnY36w8JgJ/5axk6CsPJRVV4Ib+UFiKlFTTIkF739C1c2Up+mtV1Q==
+        code : |1-
          //Déclaration de variable
          sPk_comm is int
          
@@ -492,10 +498,20 @@ window :
          	HAjoute(tb_composer,hEcritureDéfaut)
          	
          	
-         	
+         	//réduire la quantité en stock selon le nombre d'articles achetés
          	stock = table_panier.COL_stock_table - tb_composer.composer_qte
          	
-         	HModifie(tb_composant.qte_comp,hNumEnrEnCours)
+         	tb_composant.pk_composant=table_panier.COL_pk_composant	
+         	
+         		
+         	// charge les données du composant à modifier dans la mémoire tampon
+         	HLitRecherchePremier(tb_composant,pk_composant,table_panier.COL_pk_composant)
+         	
+         	//modifier le composant chargé dans la mémoire tampon
+         	tb_composant.qte_comp = stock
+         	
+         	//enregistre la modification en base de donnée (update)
+         	HModifie(tb_composant,hNumEnrEnCours)
          	
          END
          
@@ -519,6 +535,11 @@ window :
          
          open(FE_details_commandes, tb_commande.pk_comm)
          
+         //Affichage message d'erreur en cas d'ajout impossible
+         CAS ERREUR:
+         SI HErreurDoublon() = Vrai ALORS
+         	Avertissement("Erreur de doublon : cet enregistrement existe déjà")
+         FIN
         type : 18
       -
         type : 161
