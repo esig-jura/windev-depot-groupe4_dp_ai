@@ -170,7 +170,7 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1+
+        code : |1-
          
          IF YesNo(No,"Voulez-vous vraiment supprimer cet enregistrement ?") THEN
          	
@@ -182,6 +182,12 @@ window :
          	
          	Info("Suppression abandonnée")
          END
+         
+         //Affichage message d'erreur en cas de suppression impossible
+         CAS ERREUR:
+         SI HErreurIntégrité() = Vrai ALORS
+         	Avertissement("Cet enregistrement est utilisé ailleurs. Vous ne pouvez pas le supprimer")
+         FIN
         type : 18
       -
         type : 161

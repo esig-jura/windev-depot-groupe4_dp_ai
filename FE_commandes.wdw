@@ -173,7 +173,7 @@ window :
         enabled : false
       -
         code : |1-
-         
+         //recherche un
          indice_trouve is int = TableSeek(no_comm,MySelf,searchContains)
          
          IF indice_trouve > 0 THEN

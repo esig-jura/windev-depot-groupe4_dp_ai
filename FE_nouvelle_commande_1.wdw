@@ -332,6 +332,18 @@ window :
         internal_properties : BQAAAAUAAABICjHp+wMkm1tifHy6umFge+KxfkpPg4LmMaI+zMODyoA5ubUpjcNyfDtH9/JcETBXjYcLieJN23XgARgiFX2To30nngWn6z6ACoTGOwxlcCmPQ3uUauTNmDUBfbdm71fGQ65a57Rps1XlsCLhloJXyg==
         type_code : 3
         p_codes : []
+     -
+       name : COL_stock_table
+       identifier : 0x2310753f03e1d16a
+       internal_properties : BQAAAAUAAADc7UmLYMJzHeLI5U/jQkpeAdz0gwPzgBQjcjUNLyg08czcNIxYSPgzsCi5YcvyiILjQiNzNEcYaUF4jtdiZftF6nEu2xowLTI/KchJ11V79exleTUulOm3z53PGxO840dYX6OKotayFs2Mvc8vF1FBz1RFhGpnWdu6ZOaVKP3bo57b1Y8+BPPd0CfmII08SUxJzQ==
+       type : 2
+       content :
+        internal_properties : BQAAAAUAAACN72YkLbIVW+K6ULmHHk63JGojzV4jycoxqbS/s99LXG9GhAHWtU0+D9y7bqaXcdSscK1E+KotamewympIQ+huk+eTVmMFiGtTZIWvm1ZS8nr25r1n5SlsH0jmfGPT+wC9Dx6v09xU10zbKAU7Ca0iBya99NBne6we0Q+CHiXKcDWLExlpQs94n7dyaeoFubS2aBBZpqF+VcNzgDX8+aJlFWhBARI4+XMhVcaRGyvKaZUyHexWKXdd4/JRQsmj+8jVKlYHnRNIXoT88ENZtD/yOuAHD0rKoj5RaobU+JnLVNO+9gsKCcSyeQU79kEEPe1pFwu0e/qTMZh46QiI4dFvdyPOT3xguK+0NX6/llnL7JgWDqdqbDo8K6NwBM/3RPk3mG/B2YYlDdn1wP0HCha/OEtjIDssT5zWUK6e0k1E+Fc3vJsIdYtMo2pku+A1VNFo0+gHdSDiw3pPq9X9bAX47s0tnIgZ0WJ/9p41dlvJVynbqe2c5H51P66pYqWdV/mb6XwRj0iweFq77WhpDPboiE+CA26VblojospDFIrOkuVJxW4B5mY28WZ/WeptpCxMubGQToSBI4gcA0K4i2f0Lh/djl3KI9qRnWDKMZKRbCfbe0uNn7anVBDFjASUfmc5RrBluF+L1Nc+M4LtShUB3aO6t1w1LQApnGuBhSbuiTAU6H5wJTOqC3Q5qVEdtnfVH8+S6mbigDzSluoTd/D0aTOtXro5WTHGl1BH7KAZ/tM9ZIrxxO/mhh+dd5Q5qsL9DCdwhwERWqE0TzOilbzZ+HB+rOm4SvakpGw=
+        type : 2
+       code_elements :
+        internal_properties : BQAAAAUAAAA4flXvKxlVjzQm0anB45O10ZhDb8KRGUloNPWpmz5eMa0wj4Xeq2mHWZh0UY4NECQae0UvAhAQuv5nw429mfd0
+        type_code : 3
+        p_codes : []
     type : 9
     controls : []
     code_elements :
@@ -397,8 +409,16 @@ window :
          	Trace(Combo_tb_composant_nom.COL_stock)
          	Erreur("Il n'y a pas assez de stock, il n'en reste que "+ Combo_tb_composant_nom.COL_stock)
          else
+         	//Vérifie que la quantité soit supérieur à 0
+         	if CS_qte_composant <= 0 then
+         		Erreur("Vous n'avez pas ajouté de quantité")
+         	else
+         	
          	//ajoute les champs remplis dans la table panier
-         	TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom.ValeurMémorisée)
+         	TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,...
+         	Combo_tb_composant_nom.ValeurMémorisée, Combo_tb_composant_nom.COL_stock)
+         		
+         	END
          END
         type : 18
       -
@@ -461,7 +481,7 @@ window :
          //Initialise les données avec leur valeur par défaut
          HReset(tb_composer)
          
-         
+         stock is int = 0
          //boucle pour l'ajout d'un article dans la commande
          //Parcourir le tableau et récupérer la pk des composants
          for each row of table_panier
@@ -470,6 +490,13 @@ window :
          	tb_composer.composer_qte	= table_panier.COL_quantite
          		
          	HAjoute(tb_composer,hEcritureDéfaut)
+         	
+         	
+         	
+         	stock = table_panier.COL_stock_table - tb_composer.composer_qte
+         	
+         	HModifie(tb_composant.qte_comp,hNumEnrEnCours)
+         	
          END
          
          //déclaration variable pour la somme totale
