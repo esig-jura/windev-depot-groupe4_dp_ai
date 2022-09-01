@@ -226,6 +226,14 @@ window :
         content :
          internal_properties : BQAAAAUAAAAj3+nb3nneUt3lKeRL5arELpPgu1QkBHkEkJj0psd7EU1yKoaSNd7SRROEAYbKARJZ5vOg449dOFqVNLYs+LovKXiQkVtJ6t/RzJx22m+F3qWoUKvYWHHj38JCy7ApGzASJOdsHC7fQfNLXsGjd1kYJYj+1aKDFFj+a2gJ/BZ8Z57fvPctR3+ZmmG7+93KM2h5tn/YrgqRS7R4mPrlxbnwjQxTw+5Te/NCB3F1x7XPE11YkjPnu47+beSR4+Xrm3VNH8mla4GU1gOoQ8x/iH8sqCkpuwegSh7uPFvvJLIR4YvGVgBbWtuHQoN6sps/8QIzFw5WA1IAV1NZ3LGfvfBw4j0BSVTUAcpVM4ZuayUOkBCh+0l5zkhwh+WG35Nbgv6wPKz79+WePFLG8NBTKSP1/4/LH46cigkOkk6RQqI7oCqlI9UQGrE/O1E9TkGFWrIJbiX/qkz3K7dCcrYcakkSxZAIBCwUK5iSuzPbd33Rj7nkZkg2tDp7TffhqaHVQ/+W+Ww27JrnLoEqbBA1zVjvRDz6FYooNlAyw7k1C8yaPRYVNXxFPHuRnWgnMZVB6W3IOTi4umEaZirzO/PsJFpu7XGlodQs7lXT2LLXM9MQLV0kGoWO4x41twxaIhjgMJzhP+9Cy+UC8T9k54W8PzgGvSBA/h+7hCOHig8qtaKvj6fasJG+Omy+WE2GSH6xEsqWjxt2WVo+RGleyli2sgkx7S6+QMaCwySpjh4bbJiMhRV4jaKtEvBe9h2K8NnCKi0=
          type : 2
+      -
+        name : COL_stock
+        identifier : 0x2310552e01728fbd
+        internal_properties : BQAAAAUAAAChOwAioX13i8coKi5Tf8ais3kqq7cKlPrmkmsypJ12nxRCoQxGGhR6ziRVt92HM5eXaYd4icaU7cbeZh/At74HdP0a1ynLd2KuqjFxdFogwYmWdp7YB+OEuaQCYa0Bi5ZrRIKA8GrDIPhTm5JGQL0QI8Oj8Sp1B/CkEkXVChWZHA6bKhfGzzblI5CPIK63o2DdapxASa0jDVcjNFDssM0uo9zkX/WvEk0+zta+tq3V
+        type : 2
+        content :
+         internal_properties : BQAAAAUAAAAtP3hr+6fXAoFItF6CNBCy9AT5pDopABDCG9wbsQfp+qAb52AfiA6myB/U4QrX0eIT13NjSv8vOZ7A6HBCUqC5/gFHyKTeGQqqyi0H/CQMXmpMMArIiSrv9/DRc51j+v7MyjIBrp33AnIonISID00+NBrDzPyZk4ciS1OqAhmxogAhEh7rdcIVk9pHEf4tKdLZUYwrwU+/fln3BqqGlqjiyZLbwLNxbpYq3ypZRBJQIuwjk/oyMkNaCZ/eAMRMPZjBZNhbaQdJS5HSQSILHlCFy0+a0rKEKbfYdNiJu7ZCmepX/jfUGMQoVQiBpckEstbhEoWbwIZwXKB4s8vFRbgX8IK0E1XulvvD9r0S68+lQ86dYVxREF/MxjO47XMZ+bHLn9vhJLqwLMumdj0pusLAwe9XMH/WEZuLjip4AE14pybzl/JV8IQ/AMXv03VI66VJgM101xKqhYqEeA+Uf9RvpfqEEVEQvtqxs9Hu2QbQvlOciieV3j+vaHmhfFMSypYCE1prGfbiJvpKbLn/eG2evBI0GIV2KQAlJb8YFdnFHHT9I13mpjDhNoI5tDlSDBTWKd6/wduvWPszkzSMA0P7CV+1BHcUb7tgrLJQg5wDWBe4gJBx9xlvnlxmC2Ar1fNlkYut3u9B7xJOhZSaKKOX0+ReBcbtw45tNvrEg/zbUiJsoQqIjvAomQihBEfiEzxnJPE5XlkEKVNAp5asfADAYN2BDRbGC7wLp9U+GjQisS3QN97PzunyjnYk8iz8IrfZNyzks4a6AXGCC5UGLuJGfSIu
+         type : 2
      type : 9
     type : 70
     controls : []
@@ -234,6 +242,8 @@ window :
      p_codes :
       -
         code : |1-
+         
+         //Initialiser la valeur de base de la quantité à 1 et pas 0
          CS_qte_composant ="1"
          
          
@@ -241,7 +251,6 @@ window :
          CS_Fabricant_composant=Combo_tb_composant_nom.COL_fabricant
          CS_Fabricant_type=Combo_tb_composant_nom.COL_type
          CS_prix_composant=Combo_tb_composant_nom.COL_prix
-         //trACE(Combo_tb_composant_nom)
         type : 33
       -
         type : 17
@@ -377,17 +386,20 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1+
+        code : |1-
          
          //ajoute les champs remplis dans la table panier
-         TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom.ValeurMémorisée)
-         //Trace(Combo_tb_composant_nom.COL_nom)
+         //TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom.ValeurMémorisée)
          
-         
-         //for each row of table_panier
-         //	Trace(table_panier.COL_composant, table_panier.COL_fabricant, table_panier.COL_type, table_panier.COL_prix_unite, table_panier.COL_quantite, table_panier.COL_pk_composant)
-         //END
-         
+         //Vérifie que la quantité en stock soit supérieure à la quantité commandée
+         if Combo_tb_composant_nom.COL_stock - CS_qte_composant < 0 THEN
+         	Trace(CS_qte_composant)
+         	Trace(Combo_tb_composant_nom.COL_stock)
+         	Erreur("Il n'y a pas assez de stock, il n'en reste que "+ Combo_tb_composant_nom.COL_stock)
+         else
+         	//ajoute les champs remplis dans la table panier
+         	TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom.ValeurMémorisée)
+         END
         type : 18
       -
         type : 161
@@ -402,13 +414,15 @@ window :
      p_codes :
       -
         code : |1+
-         	NbSelection est un entier = TableSelect(table_panier)
-         	//Trace(NbSelection)
-         //Permet de supprimer les lignes dans le panier en cas d'erreur
+         
+         NbSelection est un entier = TableSelect(table_panier)
+         
+         
+         //Permet de supprimer les lignes dans le panier en cas d'erreur d'ajout
          IF YesNo(No,"Voulez-vous vraiment supprimer cet enregistrement ?") THEN
          	
+         	//Supprime la ligne si oui
          	TableDelete(table_panier,NbSelection)
-         	
          ELSE
          	
          	Info("Suppression abandonnée")
@@ -435,17 +449,16 @@ window :
          ScreenToFile(FE_nouvelle_commande_1, tb_commande)
          // récupère le numéro du client depuis le paramètre de la fenêtre
          tb_commande.fk_cli_comm = pkcli
-         // insert dans la table Tb commande de la bd
+         // insert dans la table tb_commande de la bd
          HSave(tb_commande)
          // récupère la pk de la nouvelle commande
          HLitDernier(tb_commande,pk_comm)
          sPk_comm = tb_commande.pk_comm
          
-         // Gestion des lignes de commandes ( contenu de la commande)
-         
+         // Gestion des lignes de commandes (contenu de la commande)
          HExécuteRequête(REQ_delete_table_panier,hDéfaut,tb_commande.pk_comm)
          
-         //tb_commande.pk_comm
+         //Initialise les données avec leur valeur par défaut
          HReset(tb_composer)
          
          
@@ -465,11 +478,12 @@ window :
          //Calcul prix de la commande actualisée
          FOR EACH ROW OF table_panier
          	
+         	// calculer le prix total
          	sPrix_tot += COL_prix_unite * COL_quantite
          	
          END
          
-         // calculer le prix total
+         // enregistrer le prix total dans la base de données
          tb_commande.prix_tot_comm = sPrix_tot
          
          HModifie(tb_commande,hNumEnrEnCours)
@@ -510,9 +524,9 @@ window :
    -
      code : |1+
       
-      
+      //Initialisation de la fenêtre en mode ajout ou modification
+      //Initialisation ajout
       if tb_commande.NewRecord then
-      	//trace(pkcli)
       	//charge les données du client
       	HLitRecherchePremier(tb_client,pk_cli,pkcli)
       	
@@ -524,22 +538,23 @@ window :
       	CS_date_commande.FormatMémorisé	= "AAAAMMJJ"
       	CS_date_commande				= DateSys()
       else
+      	//initialisation modification
       	HReadSeekFirst(tb_client,pk_cli,tb_commande.fk_cli_comm)
       	FileToScreen()
+      	
+      	//récupération de la date au bon format
       	CS_date_commande.FormatMémorisé	= "AAAAMMJJ"
       	CS_date_commande				= tb_commande.date_comm
       	
+      	//Exécuter une requête en fonction d'un numéro de commande et faire des table addline
       	HExécuteRequête(REQ_modifier_commande, hDefault, tb_commande.pk_comm)
       	
-      	//créer une requête en fonction d'un numéro de commande et faire des table addline
+      	//Remplissage de la table par les différentes lignes de composants de la commande via une boucle
       	for all REQ_modifier_commande
       		
       		TableAddLine(table_panier,REQ_modifier_commande.nom_comp, REQ_modifier_commande.nom_fab, REQ_modifier_commande.nom_type, REQ_modifier_commande.prix_comp, ...
       		REQ_modifier_commande.composer_qte, REQ_modifier_commande.fk_comp)
       		
-      		//Trace(REQ_modifier_commande.nom_comp)
-      		
-      		//TableAddLine(table_panier,Combo_tb_composant_nom.COL_nom, CS_Fabricant_composant, CS_Fabricant_type,CS_prix_composant,CS_qte_composant,Combo_tb_composant_nom)
       	END
       	
       	

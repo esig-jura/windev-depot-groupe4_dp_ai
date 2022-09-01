@@ -137,8 +137,8 @@ window :
      p_codes :
       -
         code : |1+
+         //Permet de garder la pk du client dans le tampon et le transporter dans d'autres fenêtres
          i is int = TableSelect(Table_REQ_client_commande)
-         
          
          open(FE_details_commandes, Table_REQ_client_commande.pk_comm[i])
          
@@ -227,18 +227,20 @@ window :
         enabled : false
       -
         code : |1+
-         //Affecter ce que l'utilisateur saisi au paramètre de la requête
          
+         //Affecter ce que l'utilisateur saisi au paramètre de la requête
          if RB_filtre = 1 then
+         	//lorsque le champ filtre est vide, la table se recompose
          	IF (MySelf="") THEN
          		REQ_filtre_prix_tot.PARA_prix_tot_comm_petit	= Null
          		REQ_filtre_prix_tot.PARA_prix_tot_comm_grand	= 0
          	else
+         		//il filtre plus petit que ce qui est écrit
          		REQ_filtre_prix_tot.PARA_prix_tot_comm_petit	= MySelf
          		REQ_filtre_prix_tot.PARA_prix_tot_comm_grand	= Null
          	end
          else
-         
+         	//il filtre plus grand que ce qui est écrit
          	REQ_filtre_prix_tot.PARA_prix_tot_comm_petit	= Null
          	REQ_filtre_prix_tot.PARA_prix_tot_comm_grand	= MySelf
          

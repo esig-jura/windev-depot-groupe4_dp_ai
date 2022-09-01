@@ -194,6 +194,7 @@ window :
      p_codes :
       -
         code : |1+
+         //ouvre la fenêtre pour modifier la commande sélectionnée
          open(FE_nouvelle_commande_1, tb_commande.fk_cli_comm)
          
          TableDisplay(Table_REQ_afficher_details_commande,taCurrentSelection)
@@ -212,7 +213,7 @@ window :
      p_codes :
       -
         code : |1+
-         
+         //Ouvre les options pour imprimer un état selon la commande sélectionnée
          iDestination(iVisualisateur)
          iInitRequêteEtat(Etat1, Combo_tb_commande1.ValeurAffichée)
          iImprimeEtat(Etat1)
@@ -239,12 +240,12 @@ window :
       PROCEDURE MaFenêtre(pkcommande)
    -
      code : |1-
-      
+      //Permet de garder les infos clients sur cette fenêtre
       Combo_tb_commande1=pkcommande
       ExécuteTraitement(Combo_tb_commande1,trtSélection)
       
       
-      
+      //Initialisation en mode ajout ou modification
       IF tb_commande.NewRecord THEN
       	Reset()
       ELSE
