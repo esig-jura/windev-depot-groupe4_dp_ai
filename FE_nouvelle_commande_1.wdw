@@ -481,7 +481,7 @@ window :
          HLitDernier(tb_commande,pk_comm)
          sPk_comm = tb_commande.pk_comm
          
-         // Gestion des lignes de commandes (contenu de la commande)
+         // Gestion des lignes de commandes (contenu de la commande), vider la table panier pour la repeupler correctement.
          HExécuteRequête(REQ_delete_table_panier,hDéfaut,tb_commande.pk_comm)
          
          //Initialise les données avec leur valeur par défaut
