@@ -244,6 +244,34 @@ window :
       -
         type : 161
         enabled : false
+  -
+    name : BT_vers_formulaire
+    identifier : 0x2311fa670462b6fd
+    internal_properties : BQAAAAUAAAARmqLE0oI2L1gCInMmnn078g86MyWY651do0JqLNR6VjxIhYtlvEPYjBvV2VmoNejsrmW7oqvmuSwzFMYLYcEl/BQ07/DZ61vlL9dM+rfQe2Z781Zk3BH0bk07+7pwGdnt6GmdwB7d8Yyp1pBIUPG3j6UO4iGdcf7s92VMX5KWxDJlRO3NpZY4OJi6FHQJ2y8VkfkCFkc+Q5XsRW2vc7HMsec2OgXEtEr4Mx1G/sTda+tpNRDFyGwic7a6yNQIdHBXFutkH1xpBMovOVwHclr09N3iObvaxGsYiwQ0oCftxkSHlS1jz06XIl7sB6Rfr0q3U3iayT2Yky8IrSANdrurZU5H8CJM/xePpolSzEnHGTK/KNdc++1rNE9GXmmgtSLH/kg8Ivi4uBB+MO/yrxUTMq5yRmboK/4CeyWtFRyrgXHAuAWBvlBKcted/dD4YiVpfVusU1EKqqDCFmYwlH3mJIjJdugxpmG/t3sw+rz+pB2GHQd5Q4xeGaHdQHaxdhIpEJt8k8GcNLS2aK1Szp1vnybXZXcndpju6CaS1e/lc6xAY3BqTb60zcHB89EjG2l3ACU6vmPvOwSX01SQ/jJlTDOyP3Qc6VmH9K/NEb8BEF2y345w0uU3GsP3vFsa/ZVmlgpP1z/zy0UWqOqP1lA8ZGePrETBh9sea5QjuhY8szoUAQ150ln7YDmWIgJyjt/T7Hl8dE0aRKBWHPlZPXQuoJuC40OL5ipDCjtM2oi9A0IWl0OnPbcMZnS2RM59jxDJJxzr
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         // Version 1
+         // Description 
+         // Bouton simple
+         
+        type : 14
+      -
+        code : |1+
+         formulaire est une chaîne = "https://lmo.divtec.me/pi02gr4/"
+         
+         // Exécuter l'adresse passée en variable
+         LanceAppliAssociée(formulaire)
+         SI ErreurDétectée ALORS 
+         	Erreur(ErreurInfo())
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
  menu :
   name : _Menu
   identifier : 0x292573e513b5f221

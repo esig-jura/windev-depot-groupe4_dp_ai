@@ -222,6 +222,22 @@ window :
       -
         type : 161
         enabled : false
+  -
+    name : BT_retour_accueil
+    identifier : 0x2312073804fbca44
+    internal_properties : BQAAAAUAAADvozbW16DTQwSCF30vchSj7GeVijW2tBntStlYJwUXQQEG9XPa7ITX5BbDTxlLCP8gz5K3O0vq5vmX6QDwKyy0/fAKj7Zr1TcTWOE1vZdG00DDrmhktHDxuuCJ7fJWYWbplC5WrwWhclXCmSJTEQ74Z1OJm8FxUasoymtxKW+Oq0RZasrjy6eAkUSd1zErG+NxwqT4cRUEMDrrfPzLq/i7Z50Eo6E1CwdLJEVencTugCPyf5nEOHwv8yFBiIWh1ZOBCyyEfB7yz/2Kbj9C0Gx3mEy/lVAQAgMCRwmYRQ66GJCid5kfxKMCfLFZI+87SbXUVKCycOG1XLBF4b51pyu4qXH9QBr3NEsC0xYQBgf8WHtc61xiF2F48phbVZ7Qa/7GUy67I4MI975hRmT0r5ZmMW12FpwqapWMmKTHqzgwtyFJ+rA+bWIZZ+jJTh4wHdVII6sVI3NtHyuueyWNYLWPybZC4mNAX+7uJeswESUUXYrBGZq9KKSRClHVwSzRITlW7bIb0KSCmIy5iRBptT1wAfYa5HLhpMPVPKI5hiCmqUg+x6+bIuwjL2ykJR22TGQ0pmd0EsguhJ4Ft8StJlLhoTfvhA02mH/DQ12BpCAh7rPw+xOgnmZGG4SWHfIY85KHu02dYVeycSPmGofGzIaZ2fRNz0/sNxm+MkAHX71DrMv67mK2kgVSOjd77P0FD1SLuvy1xt/M5WT4Vtmg45NLoknitkzWsLTSinysesQKxeyi4hO4RYZH
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         Use(FE_Accueil)
+        type : 18
+      -
+        type : 161
+        enabled : false
  menu :
   name : _Menu
   identifier : 0x292573e513b5f221

@@ -27,14 +27,21 @@ window :
          //et met à jour le tampon 
          ScreenToFile(FE_saisie_composants,tb_composant)
          
-         //Met à jour la table recette
-         //Comme le tampon a été vidé, un Insert est lancé sur la base de donnée
-         //donne l'ordre d'écriture du tampon vers la BD
-         //la methode hsave envoie un update si le tampon n'est pas vide à l'initialisation de la fenêtre de saisie
-         HSave(tb_composant)
+         if qte_comp <0 then
+         	Error("La quantité est inférieur à 0")
+         else
+         	//Met à jour la table recette
+         	//Comme le tampon a été vidé, un Insert est lancé sur la base de donnée
+         	//donne l'ordre d'écriture du tampon vers la BD
+         	//la methode hsave envoie un update si le tampon n'est pas vide à l'initialisation de la fenêtre de saisie
+         	HSave(tb_composant)
+         	Close()
+         END
+         
+         
          
          //fermer la fenêtre de saisie
-         Close()
+         
          
          //Affichage message d'erreur en cas d'ajout impossible
          CAS ERREUR:

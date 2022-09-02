@@ -1,4 +1,1 @@
-//MO001-002.TXT ANA00001 TO ANA00002
-tb_commande		TAR	113	nouvelle taille enregistrement : 113
-tb_commande	prix_tot_comm	CNW	Réel sur 4 octets$Chaîne unicode	la rubrique prix_tot_comm a pour nouveau type Réel sur 4 octets
-tb_composant	prix_comp	CNW	Réel sur 4 octets$Entier sur 4 octets	la rubrique prix_comp a pour nouveau type Réel sur 4 octets
+//MO002-003.TXT ANA00002 TO ANA00003
