@@ -101,6 +101,18 @@ window :
         internal_properties : BQAAAAUAAADvcjtitzrPix8gbXRf1q358DaT8Jb3uiBgwwDUfWFLBE/IEMlKbHksE1GBhZnLCOgZmFDDdxCn2oHGsca1To7J9eVr
         type_code : 3
         p_codes : []
+     -
+       name : stock_comp
+       identifier : 0x231349e201ba8aab
+       internal_properties : BQAAAAUAAAAlA6vBK8tLMjY14xniKDaGfw55SgdoREFinWKltTB6idCY66eTry1dKb5u6iZ4p5iOUNRONsZUqAxC4p+zksLXU860WX+NjkXHoi597dQ4/wn5D1jPKfDkLBhcXa8NEmg0MkW2JPF4qvXRzVE3rsfTw1dmhqbp1Klb3Ilgp/4io6LzkGsHqcxWzTXTJV3ZJR1YTZKethaWqpiyCe2u354pOkuplCrcu/AEfka5XEzhwrG3J0fcP/rtxIfObHZR
+       type : 2
+       content :
+        internal_properties : BQAAAAUAAACLHvOFUyWiQNfk/2yE1pv26vuWWzF87sq/MU5yIa8IRJFiqLalNIqYggzxRdR8Wzt4YEWm1AiFXZoIY5jRfpo9K8STHRc3Tenu2irsvU1GgO/GhjodvEfKhPA8wY6QiWonQFTWj7zxm4f7J2Gv9lotRRI4OZmGJ2eSqoPXRagVVCo4C7V9fRd/4gsp5N6/MvpqUYNKsGJJWk0aquCkvQ+/C3dMAXMLhQn05mUzkKjdHd8Ab83olLMfh29NYOsm7JXSCcUVzKIxhvUaKQZvqULGG52ylXwPf/BmOOXzr4GfS7bcZxzuW98H4WyUfvAh+KfWyeZRzDrjQgGKaOeYntf01GA923OofEdvv/YOnuKY5QmpcPc0kOl5eYpTRS8/hINKRe+djwE0Sn9vIWrBU9qDpYnok40zy0GnNXUZ0OwOZtxjT6Rm0mFDzj21InzmeMXVmdeMSQVubjVuqMrBG11gyadgFbAwe+80w60oClLNa6h5Fm7CH1Jodm0y47/mCY9elbMGK1VGOe9Y0luJuWhO4b8fnBS46sE2jXGA4j0OUsBt6JFb07orjt/mHvgU2CBHLcRnkFnPzpPPELuaFrEyAYu4t2tLRWUgSLFTqXW7OoAjysKXmip6j2MSeSilHBHgDKUweAzNwQQDvN3r72OjfmOHWDSI3ZG2mf4CnWdoJgOIn5sjzU3fVmcsELYnbMD21hHVGF97OPktUJ7TzXf7kG0yE3PEPKAryKmYGYGooMWRoECyikpgeicj03X9obge9ALdlEaImYKGKw3vl7r4hHWUbw==
+        type : 2
+       code_elements :
+        internal_properties : BQAAAAUAAAA+Y03ylgIO+2OqJV/xVNXk93iXbysoz/BVtwmbMdPLNoydX6NvxTQc9IHSK/HYEXxKKoLktRFvO1TdoUntcWcc1EwzvwrNVEWwg1ISwKpGLrcj4qgOvvRL3b/MQKnVV9fwpijF6ZQw1PZviz3Yi1BPbz7/a+JC2tOblUie97PnblPidGxAqsDytTYwPF5P2qX/H4E0/rcHJg==
+        type_code : 3
+        p_codes : []
     type : 9
     controls : []
     code_elements :
