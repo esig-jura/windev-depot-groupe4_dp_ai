@@ -165,7 +165,7 @@ window :
          	
          	HDelete(tb_type)
          	
-         	Table_tb_types.BrowsedFile = "tb_pays"
+         	Table_tb_types.BrowsedFile = "tb_type"
          	
          ELSE
          	

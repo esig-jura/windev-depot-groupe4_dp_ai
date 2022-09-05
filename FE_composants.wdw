@@ -275,9 +275,6 @@ window :
    -
      code : |1-
       
-      SI HErreurIntégrité() = Vrai ALORS
-      	Erreur("Erreur d'intégrité : cet enregistrement ne peut être modifié")
-      FIN
      type : 34
    -
      type : 230
