@@ -400,15 +400,14 @@ window :
       -
         code : |1-
          
-         //resultat est un entier
+         //Empêcher l'ajout de doublons dans le panier
+         resultat est un entier
          
-         //resultat = TableCherche(COL_nom, Combo_tb_composant_nom.COL_nom)
+         resultat = TableCherche(COL_pk_composant, Combo_tb_composant_nom,rechercheIdentique)
          
-         //Trace(resultat)
-         
-         //if resultat <> -1 THEN
-         	//Erreur("Vous avez ajouté deux fois le même composant dans cette commande.")
-         //else
+         if resultat <> -1 THEN
+         	Erreur("Vous avez ajouté deux fois le même composant dans cette commande.")
+         else
          	//Vérifie qu'un composant a bien été choisi
          	if Combo_tb_composant_nom = 0 then
          		Erreur("Vous n'avez pas choisi de composant")
@@ -434,7 +433,7 @@ window :
          			END
          		end
          	end
-         //end
+         end
          
          //Trace(table_panier.COL_pk_composant)
         type : 18
