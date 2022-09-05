@@ -434,8 +434,6 @@ window :
          		end
          	end
          end
-         
-         //Trace(table_panier.COL_pk_composant)
         type : 18
       -
         type : 161
