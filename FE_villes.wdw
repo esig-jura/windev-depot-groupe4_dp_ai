@@ -10,7 +10,7 @@ info :
 window :
  name : FE_villes
  identifier : 0x22ff7d0f03ba95ec
- internal_properties : BQAAAAUAAAAuRffLSo864XQLDKvuz4O+NdQcFJxT1hz3J8n2M7PXqSjnVLD6oC+fE6+qn1Mr34IgQmx3CeZL5ToJiHjMznvu2Wk/mYkBu8pFjorepsg+eCqLu9XZkl/3UCKapaIAxw5oPVr+PvmW1tmml8MiYZNJL7VTqx72XQBKgPlnTteSjqkLZbznDHeVkGcEcEgw/1PK0MexQ+rlWeVdUYefsdSR4sJ3mc0jMd/LD3OnQ5Nxo09kefhtbve+0rTUNBqvHuvzk+UV4Yj+aa2kFdT9TzdWcel+w+G3zS/ioo2jTfZLzf+rXP080IXeeANB9GbQeQsC6U0f21psMmCfSvhVf2dHVjgKq6BFYEXVtuOZX9BeVr01d9Zb+hmT0yqZkFKyPUph0bWfVvSTfHKSbgb8U5nu71AdPZDs85ocWwFmnH4vSAAtKg04kehPrhmyquqaM4wdhbiG3gYYYRefk7FeTvsl0b4wZ9Jqk+hnci+XUzzDcL17ecWYVrmHX2b3G4ELlqop7G+KlYKtLK9X7Ytzix4xS2ZqZOvvXKCRUgp53FOiPY0+TiDy2wDCgbF0b8pc2y4l/OVn0M/CyfMb7inO2fh4+wv90jObnqUmLI2Ltnjx4XgRm3K7HMH3LZPmAtVKISI=
+ internal_properties : BQAAAAUAAACrLFnT3qcwi56aSJcGZeGy5xyBQ4GHGLatGFTtiW/+QrkERGpqWFA87lMZSwSMse25y37Qs0dl5y71N0BHAxYe7MLZbo0FOpCz3s+iJZ+Tas0pMolf/JK1/6Zyy4KbfL8gXokknGZh9vm214FXii8hsES7x9jA7L6qWpT2E9ytB3OPh32fN1o+aYc6hDFZ9YBoy/9aHdcIbH8751bbN83uSYqlkc3kI4F4kHwI4Ld7zghkKp6XWbVIJSBlML4SEEgzNBchqvzLRLQ0Hb+3SHaqx4/eI65BGwZ6RIgPzrU1AyuPhIp5RMEDnfpAMWnqwoEa0MQm7xYyO17iFfWYZHKxvFMZ1FgTwhrbCezQ2rWt9sMQAgOPNEW654NY8bGjWFzThMxInt4XtWADFZ+ZXsI+n2cA2iokvTsI7BrdR1PKfNRYj1Da7Vz8NNIlb/8dVLI9YJ35dDrG5on8KgqFh0b33/vpZlJEjzlNSV5A/gEyDpumeN7cjHMUb6FwLFqKQl/2Vu010nyRyNdF4QNS0iyQoQdb0ovd7E2bZ1e3sU07v/icRjD1Nkn8pWMVe6Uj+pP02FzaMUzfnXjUPJdafhjDggqUm1HuoEmQq5UCRZNCCMFFOuf2QswMzQgmWBTZGHM6XYMmb+HX3mnB
  controls :
   -
     name : Table_tb_ville
@@ -126,13 +126,14 @@ window :
   -
     name : BT_supprimer_ville
     identifier : 0x2304818906178067
-    internal_properties : BQAAAAUAAADfSE0q77vrB9NCb1A5Xy6GlgWIC0EyYpK2ECl9LMlhQKpy/5Doj1nxtAHuFoTnla/JxCNuwuZMo4wXS8MfNnTDITnf1bCaXGCXnnY6YsbDperMGM/GQIim7vlv7ixV0YjqtfAm5iwUKlneSxwP19vOtWyXsFN+FnqIhh25F/TLWAZ7PRKFs8MM5lZR6yaAzc/uTq5e8EmHv3qjlFkH9YPA26lTaixVmqHF3o+gpmKq2OtpHUPS8TWL6rAH+/ofp8Nv68HS+xrg2fYASI1zUvtwo3plrTCGVeljkV5fgxJKmcEgR41dyGj6IBaUdISUouU90jhkkBFHXX3FLX/HKOcjeYd6k/iVkUw/+iAtQs9Whef0TaK3CAjUi0T0c65U0oRsbukHVof6fwnBYbMxDp+1hoLgJmy9p1Rb/AqRWPO5oUW8hq2ndFEQKSoZnQsF0SaFKQ7C3fqlkyF+ghtJAXqSMUIYge9Bu/dk+OgGQ45VmVSy6eI5dMkRPqiXHyxITrbLGiIO26rv7rnhVSvW0nTcdfHgl+mCdlB4HGYnUzBILo1VgQfVJGWHWTxwxL+aHCWz1HHImyPOsHRpxGtC5Hbwsh8apDlGvX1blGJ2gkZTWeGuhZ1DOr4GhlDDZ9RrpPE0T7itCP/SCp/MXbXqv7H8uXIwSZ06YVgoPWgScKOP14IAv3eLrzCU+re4MikoHNh+jDPRYmVYZ+XrvTEOmE0fo1Zn4f0fHF0qYfWLufXOUrak9KXlttvxOje7YJ9VE0lortIlznVoyL5pZ4tMaw==
+    internal_properties : BQAAAAUAAACCJfesriNwY0BC03HMUEjfXXdYiG/k5MWdk77MLYtqsCIzJeJGk9CrmstKbznKKG+31hTQ355AcSWNSo5V8lnCAdRovMkviVWn7mwFzF3PtLYeYHZHPUpIVVps+46N8KQqPCsvhwp6UxScY9K2JZjrkJ+oOeHcIdKAbb2sRv3MrLRiKV5fwLZfR9wwGOffEOp1wH46mXbCFO5usjvoTg0477yi7hJOYcbiVde8x3EKNdcbtA7lhVKPqBNy+85KJzJitVyKNPsxmSsaUXXt4I07pMhQzojzsTbeoTBnhz8IaYwzMp1O9YoCaRZ9u0BUZEFbcedJ3GxCtJ7pwL69rWjTXAo2shNPVDburbsslJRBZs3hjSfjuoHNLQOoAbfzXgrL5E+PaVd7fIEaBShULuEe0uvNM3J1HV9hsQJoiZVzdnuXdWR5ODHDFYOHRtYPkVOftlenAfzFZrezksI2MV75pVfpqtMzzz58kyj9fGa/bFbRLM2HGDNu6HFN8J8ALo3jVzszDaLjCz2mf0Cd0ia/B5jjYpeQmuMIn77I7lZQnU105D4LrOuwqSsqw3Ci7my3aSJx++WSAUYc1ATdRuyTFhxbkacOjyAZ5XbjBQRB0r0tqnYnWvLrRtHn5FfH1ESobLFasF/u7XkFaQIpPdtNXQFbjKFctZvaomBLV/U3IgAjzhotDXA73HyQ85D6+keKO0YcPjkoypnCwaxbOj/mV2sQuoe1oHBshtcADP0ahxqlseKtwtFQkpyzV9jro+LStz9CBhXuxguMuPv3hfM=
     type : 4
     code_elements :
      type_code : 4
      p_codes :
       -
-        code : |1+
+        internal_properties : BQAAAAUAAABUHz8hVhFi02/J7EhBrMlSNO0MeAqWBppfCjnxm/4kgJdm7XWgB5T6wjMexC1lxpG0E9/miOIxDqpCyq3t86PoLtBkATH/1oB8x09XjEnNP/qUDpwcbSPg0NLupmnY36w8JgJ/5axk6CsPJRVV4Ib+UFiKlFTTIkF739C1c2Up+mtV1Q==
+        code : |1-
          
          IF YesNo(No,"Voulez-vous vraiment supprimer cet enregistrement ?") THEN
          	
@@ -144,6 +145,12 @@ window :
          	
          	Info("Suppression abandonnée")
          END
+         
+         //Affichage message d'erreur en cas de suppression impossible
+         CAS ERREUR:
+         SI HErreurIntégrité() = Vrai ALORS
+         	Avertissement("Cet enregistrement est utilisé ailleurs. Vous ne pouvez pas le supprimer")
+         FIN
         type : 18
       -
         type : 161
@@ -182,7 +189,7 @@ window :
       -
         code : |1-
          
-         indice_trouve_ville is int = TableSeek(nom_ville,MySelf,searchContains)
+         indice_trouve_ville is int = TableSeek(nom_ville,MySelf,searchStartsWith)
          
          
          IF indice_trouve_ville > 0 THEN
@@ -197,16 +204,17 @@ window :
          END
         type : 17
   -
-    name : Bouton1
-    identifier : 0x2305cb7f0540ba01
-    internal_properties : BQAAAAUAAABoJRJqTCB7sl2WRPTHH3ULlC35jIhsaEKOdiesL4ZoA2uetQ/PIEp+tcZG74/SSbtoKWjDbuciWYyPMtA0KmsG20BMT3uzeduiRwhezbgiwBZMKSV/p6cfPPLUEmw0U69Hgy8fNFK66YAo72h+HqbNGG/FM9gJXk1fIG5ZdGhmUswEA5kIa4gbUZPyK6/y48pcSfNAayMs+rAM/A/rVNhW+NiwLg6LSUndRBc0L0TgL5hVbnA6KU3/+k6dR6KSsRtyvvnvbFcpGwhdZePtrKF8qasBvZr97bD3xhFaFdDLo+TxiTV7/7X3KNM3NoLFE+/aqtTdqrOUiFLVBeuW98tYP07/XzLCE/NgedpWwjkfiQiPkjrPA5PSNmM7P1Gby55mAHCWk6Ivl8xY/sHFGDg4YVaAq6Trc0daoYxMBLUsR3m4Fkf4/EV/oy0xt3vVYdNgHkUY6URObXP9Czpm+b1jw98kPz3tIGzS0NnvVLQmCzai2Qd1IZXzRiR5jlU+i+ModLjU/OdpTCha7VVC7gnwt5G8ASSOJYHtG1AuP0F+zSedVzy9TEjU9PZtvYHspyO5tjb0XTSQBXdz4XekTQ7bXUbb+9G5M595EtnulcW/UHVNV3SGYQ2OO7sOMHk5NdAf4/Smp7gvPjkw9GWdhofY8VdGbQA7oVz0notQKBI5AreVXNnLk8afgUbKLf1/LTD02A/DlvvD3YgkfO0kcH9K4V/ttOLGi4qg
+    name : BT_retour_accueil
+    identifier : 0x231207510541295b
+    internal_properties : BQAAAAUAAABz14oqe0xH1/iWi9HDDvBfiINh9mHqQMUJNgDvTtrkpOAtbjQTNeEk/8nKYkzUFR7D8ufcKBzHd8yyZAePILEL2HMjCFdszltPX8G1LbeWQ8Bznpg05CCBOpB5/XKGoeZZtM4Wz0WhcsUCueIDsb6Ip4O5y3GhATsoGnthCfwujc63qvKhzalcHTA76ZNVd9GzhHSoq5sAKe7HpFjPF6SjDxFwLyWh1ysPkB3qKQh64HMme3U4NGgzh80JXCE10QM5/9Aw4NpWI1meXuumNDBfsHhDmdx03sdG60lU6cL2qCB+052L6NceSNUhF3tf1T0UyPyePHW5kOzRqUJxow/wCaVZDG7rMJemRwZsWuPIkJtoV4AG21UUpnxjEcy+DQAEUZjBqU3KJfRXQCJ65Vi4n5OgXNLcNOtqVv5tQV6CeT8vbM4En8w/ZQbrZHTW9yfWscVrUWVnfamsfSMj1kch10R0EMnCmUTUS/VmbyNuLxhXgwBbWs6PMIevL3JHs7PcczSZXj7k7pKv4z7vG/+qN6wM4nCLFtHjCvwnFK7wy6unrlhmx3+qpGGHOvptsemZOwrRTTXNM5e+j2yFTqq5WS9HLFWe8Md7G5WJfCj5xsuIU5uoJh5OEzzO5SqgS2q/MyVlKT+KubveEk9eFBgjf8oZ46F6AcF0eAyzQ5WdLAH4cv4sFJ/ymNWHmKGVhcgV1AS9TKG+HWLmWmX0RzfvxnWWAvBqTNA+JphI3mD2MXg2DmdU4Rrb
     type : 4
     code_elements :
      type_code : 4
      p_codes :
       -
-        code : |1+
-         TableSelectPlus(Table_tb_ville,916)
+        code : |1-
+         
+         Use(FE_Accueil)
         type : 18
       -
         type : 161
