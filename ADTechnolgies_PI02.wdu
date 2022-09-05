@@ -28,6 +28,7 @@ BOITE.PNG
 CITY.PNG
 COMPOSANT.PNG
 CONTACT.PNG
+FILTRE.PNG
 LOGO_AD_CERCLE.PNG
 PAYS.PNG
 USINE.PNG
@@ -54,6 +55,8 @@ FE_clients.wdw
 REQ_etat.WDR
 REQ_plus_grand_prix_tot.WDR
 Etat1.wde
+FE_saisie_type.wdw
+Gestion_des_types.wdw
 ADTechnolgies_PI02.wdy
 Gabarits\WD\250 Phoenix\Phoenix.wdy
 Gabarits\WD\250 Phoenix\PHOENIX_BG_SHEET.PNG
